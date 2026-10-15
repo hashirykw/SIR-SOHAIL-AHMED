@@ -426,9 +426,9 @@ input[type=range]:active::-webkit-slider-thumb{transform:scale(1.15)}
 .ab-grid{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:clamp(32px,5vw,80px);align-items:center}
 @media (max-width:900px){.ab-grid{grid-template-columns:1fr}}
 .ab-portrait{position:relative;margin:0;aspect-ratio:4/4.6;max-width:460px;width:100%;justify-self:center;transition:transform .6s var(--e-out)}
-.ab-disc{position:absolute;left:4%;right:4%;bottom:0;aspect-ratio:1;border-radius:46% 54% 50% 50% / 52% 48% 52% 48%;background:radial-gradient(60% 60% at 40% 40%,color-mix(in oklab,var(--c-accent) 34%,transparent),transparent 72%),radial-gradient(70% 70% at 70% 80%,color-mix(in oklab,var(--c-cool) 26%,transparent),transparent 70%),var(--c-paper-2);border:1px solid var(--c-line-2);animation:morph 14s ease-in-out infinite}
-@keyframes morph{50%{border-radius:56% 44% 42% 58% / 44% 58% 42% 56%}}
-.ab-portrait img{position:absolute;left:50%;bottom:0;width:104%;max-width:none;height:auto;transform:translateX(-50%);filter:drop-shadow(0 30px 40px var(--c-shadow));-webkit-mask-image:linear-gradient(#000 90%,transparent);mask-image:linear-gradient(#000 90%,transparent)}
+.ab-disc{position:absolute;left:6%;right:6%;top:8%;bottom:14%;border-radius:50%;background:radial-gradient(closest-side,color-mix(in oklab,var(--c-accent) 32%,transparent),transparent 72%),radial-gradient(40% 40% at 70% 28%,color-mix(in oklab,var(--c-cool) 28%,transparent),transparent 70%);filter:blur(26px);animation:abglow 7s ease-in-out infinite}
+@keyframes abglow{50%{opacity:.65;scale:1.05}}
+.ab-portrait img{position:absolute;left:50%;bottom:0;width:104%;max-width:none;height:auto;transform:translateX(-50%);-webkit-mask-image:linear-gradient(#000 80%,transparent 99%);mask-image:linear-gradient(#000 80%,transparent 99%)}
 .ab-t{position:absolute;left:0;top:14%;z-index:2}
 .ab-copy{display:grid;gap:var(--s-4)}
 .ab-copy h1{font-size:var(--t-3xl);font-weight:600;letter-spacing:-.02em;line-height:1}
@@ -464,6 +464,12 @@ input[type=range]:active::-webkit-slider-thumb{transform:scale(1.15)}
 .v-play{flex:none;width:54px;height:54px;border-radius:50%;background:var(--c-accent);color:var(--c-on-accent);display:grid;place-items:center;box-shadow:0 0 0 10px var(--c-accent-soft)}
 .v-play svg{width:22px;height:22px}
 .final-h{font-size:clamp(36px,6.6vw,96px);font-weight:600;letter-spacing:-.02em;line-height:1;max-width:13ch}
+.ab-ring{position:absolute;left:6%;top:4%;width:88%;height:auto;overflow:visible;z-index:0}
+.ab-ring circle{fill:none}.ab-ring .r1{stroke:var(--c-line-2);stroke-width:1}
+.ab-ring .r2{stroke:var(--c-accent);stroke-width:2.2;stroke-linecap:round;stroke-dasharray:16 84;transform-origin:200px 200px;animation:aborb 20s linear infinite;filter:drop-shadow(0 0 6px var(--c-accent-glow))}
+@keyframes aborb{to{transform:rotate(360deg)}}
+.ab-portrait img{z-index:1}.ab-t{z-index:2}
+.ab-portrait{filter:drop-shadow(0 0 1px color-mix(in oklab,var(--c-accent) 35%,transparent)) drop-shadow(-6px -8px 22px color-mix(in oklab,var(--c-accent) 22%,transparent))}
 
 </style>
 </head>
@@ -484,8 +490,8 @@ input[type=range]:active::-webkit-slider-thumb{transform:scale(1.15)}
 <main id="main">
 <section class="ab-hero">
   <div class="wrap ab-grid">
-    <figure class="ab-portrait" data-tilt="4">
-      <span class="ab-disc" aria-hidden="true"></span>
+    <figure class="ab-portrait">
+      <span class="ab-disc" aria-hidden="true"></span><svg class="cv-ring ab-ring" viewBox="0 0 400 400" aria-hidden="true"><circle class="r1" cx="200" cy="200" r="190"/><circle class="r2" cx="200" cy="200" r="190" pathLength="100"/></svg>
       <img src="sohail-ahmed.webp" alt="Sir Sohail Ahmed" width="1280" height="1129">
       <span class="spec-tag ab-t"><i></i>Business · O / A Level</span>
     </figure>
