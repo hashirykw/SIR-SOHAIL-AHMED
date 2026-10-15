@@ -1,0 +1,1332 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<script>(function(d){d.classList.add('js');try{var t=JSON.parse(localStorage.getItem('biz-theme'));if(t)d.setAttribute('data-theme',t)}catch(e){}})(document.documentElement)</script>
+<title>Courses · Sir Sohail Ahmed Business</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="O Level Business 7115/7081, IGCSE 0450/0264 and AS & A Level Business 9609: papers, weightings, units and how classes run.">
+<meta name="theme-color" content="#0f1714">
+<meta property="og:title" content="Courses · Sir Sohail Ahmed Business"><meta property="og:description" content="O Level Business 7115/7081, IGCSE 0450/0264 and AS & A Level Business 9609: papers, weightings, units and how classes run."><meta property="og:type" content="website"><meta property="og:url" content="https://sirsohailahmed.vercel.app/courses"><meta property="og:image" content="sohail-ahmed.jpg">
+<link rel="canonical" href="https://sirsohailahmed.vercel.app/courses">
+<link rel="icon" id="favicon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%2312694a'/%3E%3Cpath d='M17 48V36M28 48V25M39 48V30M50 48V15' stroke='%23f4efe0' stroke-width='6' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400..900&family=Instrument+Sans:wght@400..700&family=JetBrains+Mono:wght@400;500;600&display=swap">
+<script>(function(d){var go=function(){d.classList.add('ready')};setTimeout(go,1200);try{Promise.all([document.fonts.load('600 1em "Bodoni Moda"'),document.fonts.load('400 1em "Instrument Sans"')]).then(go,go)}catch(e){go()}})(document.documentElement)</script>
+
+<style>
+/* Hallmark · macrostructure: Annual Report (multi-page) · genre: editorial-financial · tone: confident, boardroom
+ * theme: custom (vibe: "a company's annual report on ivory stock by day; a trading floor after hours by night")
+ * paper (dark) oklch(14.5% .016 170) · accent oklch(80% .16 152) ticker green · brass oklch(82% .11 82) · down oklch(68% .18 25)
+ * type: Bodoni Moda (display) + Instrument Sans + JetBrains Mono · nav: N5 floating pill + N13 ⌘K · footer: Ft5 statement
+ * diversification vs earlier builds: green+brass, high-contrast serif, ledger rules
+ * Hallmark · pre-emit critique: P5 H5 E4 S5 R5 V5 */
+:root{
+  /* layout: an annual report — a cover hero, a ticker band, a pinned mark-ladder, live charts, a company org chart */
+  --c-paper:oklch(14.5% .016 170); --c-paper-2:oklch(18% .018 170); --c-paper-3:oklch(21.5% .02 170); --c-paper-4:oklch(26.5% .022 170);
+  --c-ink:oklch(96.5% .012 95); --c-ink-2:oklch(83% .018 120); --c-ink-3:oklch(67% .02 150);
+  --c-line:oklch(100% 0 0 / .08); --c-line-2:oklch(100% 0 0 / .15);
+  --c-accent:oklch(80% .16 152); --c-accent-hi:oklch(86% .15 150); --c-on-accent:oklch(17% .04 165);
+  --c-accent-soft:oklch(80% .16 152 / .14); --c-accent-glow:oklch(80% .16 152 / .36);
+  --c-cool:oklch(82% .11 82); --c-cool-soft:oklch(82% .11 82 / .15);
+  --c-ok:oklch(80% .16 152); --c-ok-soft:oklch(80% .16 152 / .15); --c-bad:oklch(68% .18 25); --c-bad-soft:oklch(68% .18 25 / .15); --c-pink:oklch(78% .1 240); --c-eco:oklch(78% .12 300);
+  --c-scrim:oklch(8% .02 170 / .68); --c-shadow:oklch(4% .02 170 / .62);
+  --f-display:"Bodoni Moda","Didot","Bodoni 72",Georgia,serif;
+  --f-body:"Instrument Sans",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  --f-mono:"JetBrains Mono",ui-monospace,"SFMono-Regular",Menlo,Consolas,monospace;
+  --s-1:4px;--s-2:8px;--s-3:12px;--s-4:16px;--s-5:24px;--s-6:32px;--s-7:48px;--s-8:64px;--s-9:96px;--s-10:128px;
+  --t-xs:12px;--t-sm:14px;--t-md:16px;--t-lg:19px;--t-xl:clamp(21px,2.3vw,28px);--t-2xl:clamp(30px,4.2vw,54px);--t-3xl:clamp(38px,6vw,82px);--t-hero:clamp(46px,8vw,124px);
+  --r-sm:10px;--r-md:16px;--r-lg:24px;--r-pill:999px;
+  --e-out:cubic-bezier(.16,1,.3,1);--e-in:cubic-bezier(.7,0,.84,0);--e-io:cubic-bezier(.65,0,.35,1);
+  --d-1:.15s;--d-2:.3s;--d-3:.6s;--d-4:1s;
+  --max:1280px; --nav-h:64px;
+  color-scheme:dark;
+}
+@media (prefers-color-scheme: light){:root:not([data-theme="dark"]){
+  --c-paper:oklch(97.6% .012 92);--c-paper-2:oklch(95% .016 92);--c-paper-3:oklch(99.4% .005 92);--c-paper-4:oklch(91% .02 92);
+  --c-ink:oklch(21% .03 168);--c-ink-2:oklch(36% .028 165);--c-ink-3:oklch(50% .022 160);
+  --c-line:oklch(25% .03 165 / .11);--c-line-2:oklch(25% .03 165 / .2);
+  --c-accent:oklch(47% .12 158);--c-accent-hi:oklch(42% .12 158);--c-on-accent:oklch(98.5% .01 92);
+  --c-accent-soft:oklch(47% .12 158 / .1);--c-accent-glow:oklch(47% .12 158 / .26);
+  --c-cool:oklch(55% .11 72);--c-cool-soft:oklch(55% .11 72 / .12);--c-ok:oklch(47% .12 158);--c-ok-soft:oklch(47% .12 158 / .1);--c-bad:oklch(52% .19 25);--c-bad-soft:oklch(52% .19 25 / .1);--c-pink:oklch(48% .12 250);--c-eco:oklch(48% .13 305);
+  --c-scrim:oklch(22% .03 165 / .42);--c-shadow:oklch(30% .03 120 / .18);color-scheme:light}}
+:root[data-theme="light"]{
+  --c-paper:oklch(97.6% .012 92);--c-paper-2:oklch(95% .016 92);--c-paper-3:oklch(99.4% .005 92);--c-paper-4:oklch(91% .02 92);
+  --c-ink:oklch(21% .03 168);--c-ink-2:oklch(36% .028 165);--c-ink-3:oklch(50% .022 160);
+  --c-line:oklch(25% .03 165 / .11);--c-line-2:oklch(25% .03 165 / .2);
+  --c-accent:oklch(47% .12 158);--c-accent-hi:oklch(42% .12 158);--c-on-accent:oklch(98.5% .01 92);
+  --c-accent-soft:oklch(47% .12 158 / .1);--c-accent-glow:oklch(47% .12 158 / .26);
+  --c-cool:oklch(55% .11 72);--c-cool-soft:oklch(55% .11 72 / .12);--c-ok:oklch(47% .12 158);--c-ok-soft:oklch(47% .12 158 / .1);--c-bad:oklch(52% .19 25);--c-bad-soft:oklch(52% .19 25 / .1);--c-pink:oklch(48% .12 250);--c-eco:oklch(48% .13 305);
+  --c-scrim:oklch(22% .03 165 / .42);--c-shadow:oklch(30% .03 120 / .18);color-scheme:light}
+@view-transition{navigation:auto}
+::view-transition-old(root){animation:vt-out .22s linear both}
+::view-transition-new(root){animation:vt-in .38s var(--e-out) both}
+@keyframes vt-out{to{opacity:0}}
+@keyframes vt-in{from{opacity:0}}
+
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+html,body{overflow-x:clip}
+html{-webkit-text-size-adjust:100%;scrollbar-color:var(--c-paper-4) var(--c-paper)}
+html.lenis,html.lenis body{height:auto}.lenis.lenis-smooth{scroll-behavior:auto!important}.lenis.lenis-stopped{overflow:hidden}
+body{margin:0;background:var(--c-paper);color:var(--c-ink);font:400 var(--t-md)/1.6 var(--f-body);-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+::selection{background:var(--c-accent);color:var(--c-on-accent)}
+::-webkit-scrollbar{width:10px;height:10px}::-webkit-scrollbar-track{background:var(--c-paper)}
+::-webkit-scrollbar-thumb{background:var(--c-paper-4);border-radius:10px;border:2px solid var(--c-paper)}::-webkit-scrollbar-thumb:hover{background:var(--c-accent)}
+img{max-width:100%;display:block}
+a{color:inherit}
+button{font:inherit;color:inherit;cursor:pointer}
+:focus-visible{outline:2px solid var(--c-accent);outline-offset:3px;border-radius:6px}
+h1,h2,h3,h4{font-family:var(--f-display);font-weight:600;letter-spacing:-.02em;line-height:1.02;margin:0;text-wrap:balance;font-style:normal;overflow-wrap:anywhere;min-width:0}
+h2{font-size:var(--t-2xl)}
+h3{font-size:var(--t-xl);letter-spacing:-.01em;line-height:1.12}
+p{margin:0;text-wrap:pretty}
+.mono{font-family:var(--f-mono)}
+.wrap{position:relative;z-index:2;width:100%;max-width:var(--max);margin:0 auto;padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px))}
+.sec{position:relative;z-index:2;padding-block:clamp(72px,10vw,140px)}
+.lede{font-size:clamp(16px,1.5vw,19px);color:var(--c-ink-2);max-width:60ch}
+.hl{color:var(--c-accent)}
+.u-line{background:linear-gradient(var(--c-accent),var(--c-accent)) 0 92%/100% .09em no-repeat;padding-bottom:.04em}
+.stack{display:grid;gap:var(--s-4)}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+/* -------- 3D background -------- */
+#bg3d{position:fixed;inset:0;z-index:0;pointer-events:none;opacity:0;transition:opacity 1.8s var(--e-out)}
+#bg3d.on{opacity:.95}
+.no-webgl #bg3d{opacity:1}
+#bg3d canvas{width:100%!important;height:100%!important;display:block}
+.bg-veil{position:fixed;inset:0;z-index:1;pointer-events:none;background:radial-gradient(140% 90% at 50% 40%,transparent 55%,color-mix(in oklab,var(--c-paper) 70%,transparent) 100%)}
+.no-webgl #bg3d{background:radial-gradient(60% 50% at 70% 20%,var(--c-accent-soft),transparent 70%),radial-gradient(50% 40% at 10% 60%,var(--c-cool-soft),transparent 70%)}
+
+/* -------- buttons (default · hover · focus · active · disabled · loading · error · success) -------- */
+.btn{position:relative;display:inline-flex;align-items:center;justify-content:center;gap:10px;height:48px;padding:0 22px;border-radius:var(--r-pill);border:1px solid var(--c-line-2);background:var(--c-paper-3);color:var(--c-ink);font:600 15px/1 var(--f-body);text-decoration:none;white-space:nowrap;transition:background var(--d-2) var(--e-out),border-color var(--d-2) var(--e-out),transform var(--d-2) var(--e-out),box-shadow var(--d-2) var(--e-out);will-change:transform}
+.btn svg{width:18px;height:18px;flex:none}
+.btn:hover{border-color:var(--c-accent);background:var(--c-paper-4)}
+.btn:active{transform:translateY(1px) scale(.98)}
+.btn[disabled],.btn[aria-disabled="true"]{opacity:.45;pointer-events:none}
+.btn[data-state="loading"]{color:transparent}.btn[data-state="loading"]::after{content:"";position:absolute;width:16px;height:16px;border-radius:50%;border:2px solid var(--c-ink);border-right-color:transparent;animation:spin .7s linear infinite}
+.btn[data-state="error"]{border-color:var(--c-bad);color:var(--c-bad)}
+.btn[data-state="success"]{border-color:var(--c-ok);color:var(--c-ok)}
+@keyframes spin{to{transform:rotate(1turn)}}
+.btn-pri{background:var(--c-accent);border-color:transparent;color:var(--c-on-accent);box-shadow:0 12px 34px -14px var(--c-accent-glow)}
+.btn-pri:hover{background:var(--c-accent-hi);border-color:transparent}
+.btn-ghost{background:transparent}
+.btn-sm{height:38px;padding:0 15px;font-size:14px}
+.btn .fill{position:absolute;inset:0;border-radius:inherit;overflow:hidden;pointer-events:none}
+.btn-link{display:inline-flex;align-items:center;gap:8px;font:600 15px var(--f-body);color:var(--c-ink);text-decoration:none;border-bottom:1px solid var(--c-line-2);padding-bottom:3px;transition:border-color var(--d-2),color var(--d-2);white-space:nowrap}
+.btn-link:hover{color:var(--c-accent);border-color:var(--c-accent)}
+button.btn-link{background:none;border:0;border-bottom:1px solid var(--c-line-2);border-radius:0;padding:0 0 3px;cursor:pointer}
+.btn-link svg{width:16px;height:16px;transition:transform var(--d-2) var(--e-out)}.btn-link:hover svg{transform:translateX(4px)}
+
+/* -------- chips / pills -------- */
+.pill{display:inline-flex;align-items:center;gap:8px;height:30px;padding:0 12px;border-radius:var(--r-pill);border:1px solid var(--c-line-2);font:500 12.5px/1 var(--f-mono);color:var(--c-ink-2);background:var(--c-paper-2);white-space:nowrap}
+.live{width:7px;height:7px;border-radius:50%;background:var(--c-ok);box-shadow:0 0 0 0 var(--c-ok-soft);animation:live 2s infinite}
+@keyframes live{0%{box-shadow:0 0 0 0 var(--c-ok-soft)}70%{box-shadow:0 0 0 8px transparent}}
+
+/* -------- kinetic + scramble text -------- */
+.kin{display:inline}
+.kin .ch{display:inline-block;transition:font-variation-settings .35s var(--e-out),transform .35s var(--e-out),color .35s;font-variation-settings:"wght" var(--w,700)}
+.kin .sp{display:inline-block;width:.26em}
+[data-scramble]{font-variant-ligatures:none}
+
+/* -------- nav (N5 floating pill + mobile dropdown + ⌘K) -------- */
+.nav{position:fixed;left:0;right:0;top:calc(12px + env(safe-area-inset-top,0px));z-index:60;pointer-events:none;transition:transform var(--d-3) var(--e-out)}
+.nav.tuck{transform:translateY(calc(-100% - 24px))}
+.nav .wrap{display:flex;justify-content:center}
+.nav-pill{pointer-events:auto;position:relative;display:flex;align-items:center;gap:6px;height:var(--nav-h);padding:8px 8px 8px 14px;border-radius:var(--r-pill);background:color-mix(in oklab,var(--c-paper-2) 86%,transparent);border:1px solid var(--c-line-2);box-shadow:0 18px 50px -24px var(--c-shadow);backdrop-filter:blur(18px) saturate(1.3);-webkit-backdrop-filter:blur(18px) saturate(1.3);width:100%;max-width:1120px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;margin-right:auto;min-width:0}
+.brand-mark{width:40px;height:40px;border-radius:12px;overflow:hidden;display:grid;place-items:center;background:var(--c-accent);color:var(--c-on-accent);font:800 13px/1 var(--f-mono);letter-spacing:-.02em;flex:none}
+.brand-mark img{width:100%;height:100%;object-fit:contain;background:var(--c-paper-3)}
+.brand-mark.has-img{background:var(--c-paper-3)}
+.brand b{display:block;font:600 15px/1 var(--f-display);letter-spacing:-.015em;white-space:nowrap}
+.brand small{display:block;font:500 10.5px/1.4 var(--f-mono);color:var(--c-ink-3);letter-spacing:.08em;white-space:nowrap}
+.nav-links{position:relative;display:flex;align-items:center;gap:2px}
+.nav-links a{position:relative;z-index:1;height:40px;display:flex;align-items:center;padding:0 13px;border-radius:var(--r-pill);font:500 14px/1 var(--f-body);color:var(--c-ink-2);text-decoration:none;white-space:nowrap;transition:color var(--d-2)}
+.nav-links a:hover,.nav-links a[aria-current="page"]{color:var(--c-ink)}
+.nav-blob{position:absolute;z-index:0;top:0;height:40px;border-radius:var(--r-pill);background:var(--c-paper-4);transition:transform .45s var(--e-out),width .45s var(--e-out),opacity .3s;opacity:0}
+.nav-tools{display:flex;align-items:center;gap:6px;margin-left:6px}
+.kbtn{height:40px;display:inline-flex;align-items:center;gap:8px;padding:0 10px 0 12px;border-radius:var(--r-pill);border:1px solid var(--c-line-2);background:var(--c-paper-3);font:500 13px var(--f-body);color:var(--c-ink-2);white-space:nowrap}
+.kbtn svg{width:18px;height:18px;flex:none}
+.kbtn kbd{font:600 11px var(--f-mono);padding:3px 6px;border-radius:6px;background:var(--c-paper-4);color:var(--c-ink)}
+.ibtn{position:relative;width:40px;height:40px;border-radius:50%;border:1px solid var(--c-line-2);background:var(--c-paper-3);display:grid;place-items:center;flex:none;transition:border-color var(--d-2),background var(--d-2)}
+.ibtn:hover{border-color:var(--c-accent)}
+.ibtn svg{width:18px;height:18px}
+.ibtn[aria-pressed="true"]{background:var(--c-accent);color:var(--c-on-accent);border-color:transparent}
+.badge{position:absolute;top:-4px;right:-4px;min-width:18px;height:18px;padding:0 5px;border-radius:9px;background:var(--c-accent);color:var(--c-on-accent);font:700 10.5px/18px var(--f-mono);text-align:center}
+.badge:empty,.badge[data-n="0"]{display:none}
+.burger{display:none}
+.burger span{display:block;width:16px;height:1.6px;background:currentColor;border-radius:2px;transition:transform var(--d-2) var(--e-out),opacity var(--d-2)}
+.burger span+span{margin-top:4px}
+.burger[aria-expanded="true"] span:first-child{transform:translateY(2.8px) rotate(45deg)}
+.burger[aria-expanded="true"] span:last-child{transform:translateY(-2.8px) rotate(-45deg)}
+.mmenu{position:absolute;top:calc(100% + 10px);right:0;width:min(300px,calc(100vw - 32px));padding:10px;border-radius:20px;background:var(--c-paper-2);border:1px solid var(--c-line-2);box-shadow:0 30px 70px -30px var(--c-shadow);transform-origin:top right;transform:scale(.92) translateY(-6px);opacity:0;visibility:hidden;transition:transform .4s var(--e-out),opacity .25s,visibility .25s}
+.mmenu.open{transform:none;opacity:1;visibility:visible}
+.mmenu a{display:flex;align-items:center;justify-content:space-between;gap:12px;height:46px;padding:0 14px;border-radius:12px;text-decoration:none;font:600 16px var(--f-body);color:var(--c-ink);opacity:0;transform:translateX(10px);transition:background var(--d-2),opacity .35s var(--e-out),transform .35s var(--e-out)}
+.mmenu.open a{opacity:1;transform:none}
+.mmenu a:hover,.mmenu a[aria-current="page"]{background:var(--c-paper-4)}
+.mmenu a span{font:500 11px var(--f-mono);color:var(--c-ink-3)}
+.mmenu .mm-cta{display:flex;gap:8px;padding:8px 4px 2px}
+.mmenu .mm-cta .btn{flex:1}
+@media (max-width:1120px){.nav-links{display:none}.burger{display:grid}.kbtn span,.kbtn kbd{display:none}.kbtn{width:40px;padding:0;justify-content:center}}
+@media (hover:none){.kbtn kbd{display:none}}
+@media (max-width:420px){.brand small{display:none}.nav-tools .ibtn.optional{display:none}}
+
+/* ⌘K palette */
+.cmdk{position:fixed;inset:0;z-index:90;display:flex;justify-content:center;align-items:flex-start;padding:max(14vh,80px) 16px 16px;visibility:hidden;opacity:0;transition:opacity .2s,visibility .2s}
+.cmdk.open{visibility:visible;opacity:1}
+.cmdk .scrim{position:absolute;inset:0;background:var(--c-scrim);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)}
+.cmdk-box{position:relative;width:min(620px,100%);border-radius:20px;background:var(--c-paper-2);border:1px solid var(--c-line-2);box-shadow:0 40px 100px -30px var(--c-shadow);overflow:hidden;transform:translateY(-10px) scale(.98);transition:transform .35s var(--e-out)}
+.cmdk.open .cmdk-box{transform:none}
+.cmdk-in{display:flex;align-items:center;gap:10px;padding:0 16px;border-bottom:1px solid var(--c-line)}
+.cmdk-in span{font:600 14px var(--f-mono);color:var(--c-accent)}
+.cmdk-in input{flex:1;height:56px;border:0;background:transparent;font:500 17px var(--f-body);color:var(--c-ink);outline:none}
+.cmdk-list{max-height:min(52vh,420px);overflow-y:auto;padding:8px;overscroll-behavior:contain}
+.cmdk-g{font:600 11px var(--f-mono);letter-spacing:.1em;text-transform:uppercase;color:var(--c-ink-3);padding:10px 10px 6px}
+.cmdk-i{display:flex;align-items:center;gap:12px;width:100%;text-align:left;padding:10px 12px;border:0;border-radius:12px;background:transparent;font:500 15px var(--f-body);color:var(--c-ink);text-decoration:none}
+.cmdk-i small{margin-left:auto;font:500 12px var(--f-mono);color:var(--c-ink-3);white-space:nowrap}
+.cmdk-i.on{background:var(--c-paper-4)}
+.cmdk-i .ic{width:28px;height:28px;border-radius:8px;display:grid;place-items:center;background:var(--c-accent-soft);color:var(--c-accent);font:700 12px var(--f-mono);flex:none}
+.cmdk-foot{display:flex;gap:14px;padding:10px 16px;border-top:1px solid var(--c-line);font:500 11.5px var(--f-mono);color:var(--c-ink-3)}
+
+/* -------- section heads (varied, never tag-left/heading-right) -------- */
+.sh{display:grid;gap:var(--s-4);margin-bottom:clamp(36px,5vw,64px);max-width:860px}
+.sh.center{margin-inline:auto;text-align:center;justify-items:center}
+.sh.split{max-width:none;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);align-items:end;gap:var(--s-5) var(--s-8)}
+@media (max-width:860px){.sh.split{grid-template-columns:1fr}}
+
+/* -------- cards / panels -------- */
+.panel{position:relative;border-radius:var(--r-lg);border:1px solid var(--c-line);background:var(--c-paper-2);min-width:0}
+.spot{position:relative;overflow:hidden}
+.spot::before{content:"";position:absolute;inset:0;border-radius:inherit;background:radial-gradient(420px circle at var(--mx,50%) var(--my,-20%),var(--c-accent-soft),transparent 46%);opacity:0;transition:opacity var(--d-2);pointer-events:none}
+.spot:hover::before{opacity:1}
+
+/* -------- marquee -------- */
+.mq{display:flex;overflow:hidden;user-select:none;-webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)}
+.mq-t{display:flex;flex:none;gap:var(--s-3);padding-right:var(--s-3);animation:mq var(--mq,40s) linear infinite}
+.mq.rev .mq-t{animation-direction:reverse}
+.mq:hover .mq-t{animation-play-state:paused}
+@keyframes mq{to{transform:translateX(-100%)}}
+
+/* -------- forms -------- */
+.field{display:grid;gap:6px;min-width:0}
+.field label,.lbl{font:500 11.5px var(--f-mono);letter-spacing:.08em;text-transform:uppercase;color:var(--c-ink-3)}
+input,select,textarea{width:100%;font:inherit;color:var(--c-ink);background:var(--c-paper);border:1px solid var(--c-line-2);border-radius:12px;padding:12px 14px;transition:border-color var(--d-2),box-shadow var(--d-2)}
+input:hover,select:hover,textarea:hover{border-color:var(--c-ink-3)}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--c-accent);box-shadow:0 0 0 4px var(--c-accent-soft)}
+input[aria-invalid="true"]{border-color:var(--c-bad)}
+textarea{resize:vertical;min-height:96px}
+.seg{display:inline-flex;flex-wrap:wrap;gap:4px;padding:4px;border-radius:var(--r-pill);background:var(--c-paper-2);border:1px solid var(--c-line)}
+.seg button{height:36px;padding:0 14px;border:0;border-radius:var(--r-pill);background:transparent;font:600 13.5px var(--f-body);color:var(--c-ink-2);white-space:nowrap;transition:background var(--d-2),color var(--d-2)}
+.seg button:hover{color:var(--c-ink)}
+.seg button[aria-pressed="true"],.seg button[aria-selected="true"]{background:var(--c-accent);color:var(--c-on-accent)}
+
+/* -------- modal / drawer / toast -------- */
+.modal{position:fixed;inset:0;z-index:80;display:grid;place-items:center;padding:16px;visibility:hidden;opacity:0;transition:opacity .25s,visibility .25s}
+.modal.open{visibility:visible;opacity:1}
+.modal .scrim{position:absolute;inset:0;background:var(--c-scrim);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)}
+.modal-box{position:relative;width:min(640px,100%);max-height:min(86vh,780px);overflow:auto;border-radius:var(--r-lg);background:var(--c-paper-2);border:1px solid var(--c-line-2);padding:clamp(20px,3vw,32px);transform:translateY(20px) scale(.97);transition:transform .45s var(--e-out);overscroll-behavior:contain}
+.modal.open .modal-box{transform:none}
+.x{position:absolute;top:14px;right:14px;width:38px;height:38px;border-radius:50%;border:1px solid var(--c-line-2);background:var(--c-paper-3);font-size:18px;line-height:1;display:grid;place-items:center}
+.toast{position:fixed;left:50%;bottom:calc(88px + env(safe-area-inset-bottom,0px));z-index:95;transform:translate(-50%,16px);opacity:0;padding:11px 18px;border-radius:var(--r-pill);background:var(--c-ink);color:var(--c-paper);font:600 14px var(--f-body);pointer-events:none;transition:transform .35s var(--e-out),opacity .35s;max-width:calc(100vw - 32px);text-align:center}
+.toast.on{opacity:1;transform:translate(-50%,0)}
+
+/* cart drawer (small, right) */
+.cart{position:fixed;z-index:85;top:calc(12px + env(safe-area-inset-top,0px));right:max(12px,env(safe-area-inset-right,0px));width:min(400px,calc(100vw - 24px));max-height:calc(100vh - 24px);display:flex;flex-direction:column;border-radius:22px;background:var(--c-paper-2);border:1px solid var(--c-line-2);box-shadow:0 40px 100px -30px var(--c-shadow);transform:translateX(calc(100% + 24px));transition:transform .5s var(--e-out);overflow:hidden}
+.cart.open{transform:none}
+.cart-h{display:flex;align-items:center;justify-content:space-between;padding:16px 18px;border-bottom:1px solid var(--c-line)}
+.cart-h b{font:700 18px var(--f-display)}
+.cart-h .x{position:static}
+.cart-b{flex:1;overflow-y:auto;padding:12px 14px;display:grid;gap:10px;align-content:start;overscroll-behavior:contain}
+.ci{display:grid;grid-template-columns:44px 1fr auto;gap:12px;align-items:center;padding:10px;border-radius:14px;background:var(--c-paper-3);border:1px solid var(--c-line)}
+.ci .cv{width:44px;height:56px;border-radius:6px;display:grid;place-items:center;font:800 11px var(--f-mono);color:var(--c-on-accent);background:var(--cc,var(--c-accent))}
+.ci b{display:block;font:600 14px/1.3 var(--f-body)}
+.ci small{font:500 12px var(--f-mono);color:var(--c-ink-3)}
+.qty{display:flex;align-items:center;gap:6px}
+.qty button{width:28px;height:28px;border-radius:50%;border:1px solid var(--c-line-2);background:var(--c-paper-2)}
+.qty span{min-width:18px;text-align:center;font:600 14px var(--f-mono)}
+.cart-f{padding:14px 18px 18px;border-top:1px solid var(--c-line);display:grid;gap:12px}
+.cart-tot{display:flex;justify-content:space-between;font:600 15px var(--f-body)}
+.cart-tot b{font:800 20px var(--f-display)}
+.cart-empty{padding:30px 10px;text-align:center;color:var(--c-ink-3)}
+
+/* -------- chatbot (small panel on every screen size) -------- */
+.bot-fab{position:fixed;z-index:70;right:max(16px,env(safe-area-inset-right,0px));bottom:calc(16px + env(safe-area-inset-bottom,0px));display:flex;align-items:center;gap:10px;height:54px;padding:0 18px 0 7px;border:0;border-radius:var(--r-pill);background:var(--c-accent);color:var(--c-on-accent);font:600 14.5px var(--f-body);box-shadow:0 16px 40px -14px var(--c-accent-glow);transition:transform var(--d-3) var(--e-out)}
+.bot-fab .bf-i{width:40px;height:40px;border-radius:50%;background:var(--c-on-accent);color:var(--c-accent);display:grid;place-items:center;font:700 13px var(--f-mono)}
+.bot-fab:hover{transform:translateY(-2px)}
+.bot-fab.away{transform:translateY(160%)}
+@media (max-width:560px){.bot-fab .bf-t{display:none}.bot-fab{padding:0 7px}}
+.bot{position:fixed;z-index:75;right:max(12px,env(safe-area-inset-right,0px));bottom:calc(80px + env(safe-area-inset-bottom,0px));width:min(370px,calc(100vw - 24px));height:min(540px,calc(100vh - 150px),calc(100dvh - 150px));display:flex;flex-direction:column;border-radius:22px;background:var(--c-paper-2);border:1px solid var(--c-line-2);box-shadow:0 40px 100px -30px var(--c-shadow);overflow:hidden;transform-origin:bottom right;transform:scale(.9) translateY(14px);opacity:0;visibility:hidden;transition:transform .45s var(--e-out),opacity .25s,visibility .25s}
+.bot.open{transform:none;opacity:1;visibility:visible}
+@media (max-width:560px){.bot{height:min(470px,calc(100dvh - 160px))}}
+.bot-h{display:flex;align-items:center;gap:10px;padding:12px 14px;border-bottom:1px solid var(--c-line);background:var(--c-paper-3)}
+.bot-h .av{width:36px;height:36px;border-radius:11px;background:var(--c-accent);color:var(--c-on-accent);display:grid;place-items:center;font:800 11px var(--f-mono);overflow:hidden;flex:none}
+.bot-h .av img{width:100%;height:100%;object-fit:cover}
+.bot-h b{display:block;font:700 15px var(--f-display)}
+.bot-h small{display:flex;align-items:center;gap:6px;font:500 11px var(--f-mono);color:var(--c-ink-3)}
+.bot-h .x{position:static;margin-left:auto;width:34px;height:34px}
+.bot-h .ctx{font:600 11px var(--f-mono);padding:4px 8px;border-radius:8px;background:var(--c-accent-soft);color:var(--c-accent);white-space:nowrap}
+.bot-m{flex:1;overflow-y:auto;padding:14px;display:flex;flex-direction:column;gap:10px;overscroll-behavior:contain}
+.mg{max-width:88%;padding:10px 13px;border-radius:16px;font-size:14.5px;line-height:1.5;overflow-wrap:anywhere;animation:mg .35s var(--e-out)}
+@keyframes mg{from{opacity:0;transform:translateY(6px)}}
+.mg.b{background:var(--c-paper-3);border:1px solid var(--c-line);border-bottom-left-radius:5px}
+.mg.u{align-self:flex-end;background:var(--c-accent);color:var(--c-on-accent);border-bottom-right-radius:5px}
+.mg a{color:var(--c-accent);font-weight:600}
+.mg code{font:500 13px var(--f-mono);background:var(--c-paper-4);padding:1px 5px;border-radius:5px}
+.mg .acts{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
+.mg .acts a,.mg .acts button{display:inline-flex;align-items:center;height:30px;padding:0 11px;border-radius:var(--r-pill);border:1px solid var(--c-line-2);background:var(--c-paper-2);font:600 12.5px var(--f-body);color:var(--c-ink);text-decoration:none}
+.mg ul{margin:6px 0 0;padding-left:18px}
+.mg.typing{display:flex;gap:4px;padding:14px}
+.mg.typing i{width:6px;height:6px;border-radius:50%;background:var(--c-ink-3);animation:bl 1s infinite}
+.mg.typing i:nth-child(2){animation-delay:.15s}.mg.typing i:nth-child(3){animation-delay:.3s}
+@keyframes bl{50%{opacity:.25;transform:translateY(-2px)}}
+.bot-s{display:flex;gap:6px;overflow-x:auto;padding:0 12px 10px;scrollbar-width:none}
+.bot-s button{flex:none;height:30px;padding:0 11px;border-radius:var(--r-pill);border:1px solid var(--c-line-2);background:var(--c-paper);font:500 12.5px var(--f-body);color:var(--c-ink-2)}
+.bot form{display:flex;gap:8px;padding:10px 12px 12px;border-top:1px solid var(--c-line)}
+.bot form input{height:44px;border-radius:var(--r-pill);padding:0 16px}
+.bot form button{flex:none;width:44px;height:44px;border-radius:50%;border:0;background:var(--c-accent);color:var(--c-on-accent);display:grid;place-items:center}
+
+/* -------- footer (Ft5 statement) -------- */
+.foot{position:relative;z-index:2;border-top:1px solid var(--c-line);padding-block:clamp(56px,8vw,96px) calc(28px + env(safe-area-inset-bottom,0px));overflow:hidden}
+.foot-big{display:block;font:700 clamp(46px,12vw,190px)/.9 var(--f-display);letter-spacing:-.02em;color:transparent;-webkit-text-stroke:1.2px var(--c-line-2);white-space:nowrap;text-decoration:none;transition:-webkit-text-stroke-color .4s}
+.foot-big:hover{-webkit-text-stroke-color:var(--c-accent)}
+.foot-row{display:flex;flex-wrap:wrap;gap:12px 28px;align-items:center;justify-content:space-between;margin-top:var(--s-6)}
+.foot-row nav{display:flex;flex-wrap:wrap;gap:6px 22px}
+.foot-row nav a{font:500 15px var(--f-body);color:var(--c-ink-2);text-decoration:none;white-space:nowrap}
+.foot-row nav a:hover{color:var(--c-accent)}
+.foot-meta{display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-between;margin-top:var(--s-6);padding-top:var(--s-5);border-top:1px solid var(--c-line);font:500 12px/1.6 var(--f-mono);color:var(--c-ink-3)}
+.foot-meta a{color:var(--c-ink-2)}
+
+/* -------- page head (inner pages) -------- */
+.ph{position:relative;z-index:2;padding-block:calc(var(--nav-h) + 90px) clamp(40px,6vw,72px)}
+.ph h1{font-size:var(--t-3xl);font-weight:600;letter-spacing:-.025em;line-height:1;max-width:17ch}
+.ph .lede{margin-top:var(--s-5)}
+.crumb{display:flex;align-items:center;gap:8px;margin-bottom:var(--s-5);font:500 12.5px var(--f-mono);color:var(--c-ink-3)}
+.crumb a{color:var(--c-ink-2);text-decoration:none;white-space:nowrap}.crumb a:hover{color:var(--c-accent)}
+
+/* -------- reveal helpers (visible at rest; JS hides only below-fold items) -------- */
+.rv{will-change:transform,opacity}
+
+/* -------- motion safety -------- */
+@media (prefers-reduced-motion: reduce){
+  *,*::before,*::after{animation-duration:.001ms!important;animation-iteration-count:1!important;transition-duration:.12s!important;scroll-behavior:auto!important}
+  .mq-t{animation:none}
+  ::view-transition-old(root),::view-transition-new(root){animation:none}
+}
+
+/* logo / portrait fallbacks */
+.brand-mark .bm-t{display:none}
+.brand-mark.fb .bm-t,[data-fb-host].fb .brand-mark .bm-t{display:block}
+[data-fb-host].has-img .brand-mark{background:var(--c-paper-3)}
+@media (max-width:640px){.nav .enrol-cta{display:none}}
+.mm-tools{display:flex;gap:8px;padding:8px 6px 4px;border-top:1px solid var(--c-line);margin-top:6px}
+.mm-tools .ibtn{width:44px;height:44px}
+
+/* ===== v3: no-flash intro, images, roll nav, dock, cursor, word reveals ===== */
+@keyframes intro{from{opacity:0;transform:translateY(26px)}}
+@keyframes introClip{from{opacity:0;clip-path:inset(14% 10% 14% 10% round 32px);transform:scale(1.04)}to{clip-path:inset(0 0 0 0 round 32px)}}
+html.js:not(.ready) :is(.hero-copy>*,.portrait,.ab-copy>*,.ab-portrait,.ph .crumb,.ph h1,.ph .lede,.ph .ring-box,.ph .n-cart,.ph .pill){opacity:0}
+html.js.ready :is(.hero-copy>*,.ab-copy>*,.ph .crumb,.ph h1,.ph .lede,.ph .ring-box,.ph .n-cart,.ph .pill){animation:intro .95s var(--e-out) both}
+html.js.ready :is(.portrait,.ab-portrait){animation:introClip 1.3s var(--e-out) both .1s}
+html.js.ready :is(.hero-copy,.ab-copy)>:nth-child(2),html.js.ready .ph h1{animation-delay:.07s}
+html.js.ready :is(.hero-copy,.ab-copy)>:nth-child(3),html.js.ready .ph .lede{animation-delay:.14s}
+html.js.ready :is(.hero-copy,.ab-copy)>:nth-child(4),html.js.ready :is(.ph .ring-box,.ph .n-cart){animation-delay:.21s}
+html.js.ready :is(.hero-copy,.ab-copy)>:nth-child(5){animation-delay:.28s}
+
+img[data-fallback]{opacity:0;transition:opacity .6s var(--e-out)}
+.has-img img[data-fallback]{opacity:1}
+.brand-mark .bm-t{display:block}
+.brand.has-img .brand-mark .bm-t{display:none}
+.brand.has-img .brand-mark{background:var(--c-paper-3)}
+.brand-mark{position:relative}
+.brand-mark img{position:absolute;inset:0}
+
+.roll{display:inline-block;height:1.25em;line-height:1.25em;overflow:hidden;vertical-align:middle}
+.roll>span{display:block;transition:transform .45s var(--e-out)}
+.roll>span::after{content:attr(data-t);display:block;color:var(--c-accent)}
+.nav-links a:hover .roll>span{transform:translateY(-1.25em)}
+
+.dock{position:fixed;z-index:70;left:max(16px,env(safe-area-inset-left,0px));bottom:calc(16px + env(safe-area-inset-bottom,0px));display:flex;gap:6px;padding:6px;border-radius:var(--r-pill);background:color-mix(in oklab,var(--c-paper-2) 90%,transparent);border:1px solid var(--c-line-2);box-shadow:0 18px 44px -20px var(--c-shadow);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);transition:transform var(--d-3) var(--e-out)}
+.dock .ibtn{width:42px;height:42px}
+.dock.away{transform:translateY(160%)}
+.top-btn{position:relative}
+.tp-ring{position:absolute;inset:-1px;width:calc(100% + 2px);height:calc(100% + 2px);transform:rotate(-90deg);pointer-events:none}
+.tp-ring circle{fill:none;stroke:var(--c-accent);stroke-width:2.5;stroke-linecap:round;stroke-dasharray:119.38;stroke-dashoffset:119.38;transition:stroke-dashoffset .15s linear}
+@media (max-width:560px){.dock .ibtn{width:40px;height:40px}}
+
+.cursor{position:fixed;left:0;top:0;z-index:100;pointer-events:none;display:none}
+html.has-cursor .cursor{display:block}
+.c-dot,.c-ring{position:fixed;left:0;top:0;border-radius:50%;will-change:transform}
+.c-dot{width:6px;height:6px;margin:-3px 0 0 -3px;background:var(--c-accent)}
+.c-ring{width:36px;height:36px;margin:-18px 0 0 -18px;border:1.5px solid var(--c-accent);opacity:.45;transition:width .35s var(--e-out),height .35s var(--e-out),margin .35s var(--e-out),opacity .35s,background .35s}
+.cursor.hover .c-ring{width:64px;height:64px;margin:-32px 0 0 -32px;opacity:.9;background:var(--c-accent-soft)}
+.cursor.down .c-ring{width:28px;height:28px;margin:-14px 0 0 -14px}
+.cursor.gone{opacity:0}
+
+.wm{display:inline-block;overflow:hidden;vertical-align:bottom;padding-bottom:.1em;margin-bottom:-.1em}
+.wi{display:inline-block;will-change:transform}
+
+@media (prefers-reduced-motion: reduce){html.js :is(.hero-copy>*,.portrait,.ab-copy>*,.ab-portrait,.ph .crumb,.ph h1,.ph .lede,.ph .ring-box,.ph .n-cart,.ph .pill){opacity:1!important;animation:none!important}.cursor{display:none!important}}
+
+/* ===== Soni: brand glyphs, microscope labels ===== */
+.brand-mark svg{width:26px;height:26px}
+.bot-fab .bf-i svg{width:24px;height:24px}
+.bot-h .av svg{width:22px;height:22px}
+.spec-tag{display:inline-flex;align-items:center;gap:8px;height:28px;padding:0 11px;border-radius:6px;border:1px solid var(--c-line-2);background:color-mix(in oklab,var(--c-paper-2) 88%,transparent);font:500 11.5px var(--f-mono);letter-spacing:.06em;text-transform:uppercase;color:var(--c-ink-2);white-space:nowrap}
+.spec-tag i{width:8px;height:8px;border-radius:50%;background:var(--c-accent);flex:none}
+.g-hq{--gc:var(--c-cool)}.g-people{--gc:var(--c-pink)}.g-mkt{--gc:var(--c-bad)}.g-ops{--gc:var(--c-eco)}.g-fin{--gc:var(--c-accent)}.g-ext{--gc:var(--c-ink-2)}
+/* ledger + ticker primitives */
+.up{color:var(--c-ok)}.dn{color:var(--c-bad)}
+.tick-arrow{display:inline-block;font:600 .8em var(--f-mono)}
+.ledger{background-image:repeating-linear-gradient(to bottom,transparent 0 31px,var(--c-line) 31px 32px)}
+.num{font-family:var(--f-mono);font-variant-numeric:tabular-nums}
+.serif-num{font-family:var(--f-display);font-weight:700;font-variant-numeric:lining-nums;letter-spacing:-.015em}
+.dot{width:8px;height:8px;border-radius:50%;background:var(--c-ok);box-shadow:0 0 0 4px var(--c-ok-soft);flex:none;animation:dotp 2.4s ease-in-out infinite}
+@keyframes dotp{50%{box-shadow:0 0 0 7px transparent}}
+.hero-cta{display:flex;flex-wrap:wrap;align-items:center;gap:var(--s-4) var(--s-6)}
+/* break-even chart */
+.be-svg{display:block;width:100%;height:auto;overflow:visible}
+.be-svg text{font:500 11.5px var(--f-mono);fill:var(--c-ink-3)}
+.be-svg .be-grid{stroke:var(--c-line);stroke-width:1}
+.be-svg .be-ty{text-anchor:end}.be-svg .be-tx{text-anchor:middle}
+.be-svg .be-ax{fill:var(--c-ink-2);font-size:12px}
+.be-svg .be-tr,.be-svg .be-tc,.be-svg .be-fc{stroke-width:3;stroke-linecap:round;fill:none}
+.be-svg .be-tr{stroke:var(--c-accent)}.be-svg .be-tc{stroke:var(--c-bad)}.be-svg .be-fc{stroke:var(--c-cool);stroke-dasharray:6 6;stroke-width:2}
+.be-svg .be-profit{fill:var(--c-ok-soft)}.be-svg .be-loss{fill:var(--c-bad-soft)}
+.be-svg .be-drop{stroke:var(--c-ink-3);stroke-dasharray:3 4}
+.be-svg .be-pt{fill:var(--c-ink);stroke:var(--c-paper);stroke-width:3}
+.be-svg .be-ring{fill:none;stroke:var(--c-ink);stroke-width:1.5;transform-box:fill-box;transform-origin:center;animation:bering 2.2s var(--e-out) infinite}
+@keyframes bering{from{transform:scale(1);opacity:.8}to{transform:scale(3.2);opacity:0}}
+.be-svg .be-lab rect{fill:var(--c-paper-3);stroke:var(--c-line-2)}
+.be-svg .be-lab text{font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;fill:var(--c-ink-3)}
+.be-svg .be-lab .v{font:600 13px var(--f-mono);fill:var(--c-ink);text-transform:none;letter-spacing:0}
+.be-svg .be-q{stroke:var(--c-cool);stroke-width:1.5}
+.be-svg .be-mos{stroke:var(--c-cool);stroke-width:2;marker-start:none}
+.be-svg .be-mt{text-anchor:middle;fill:var(--c-cool);font-size:11px}
+.be-svg .be-leg text{fill:var(--c-ink-2);font-size:11.5px}
+.be-svg.draw>.be-tr,.be-svg.draw>.be-tc{stroke-dasharray:1;stroke-dashoffset:1;animation:bedraw 1.2s var(--e-out) forwards}
+.be-svg.draw>.be-tc{animation-delay:.15s}.be-svg.draw>.be-tr{animation-delay:.3s}
+.be-svg.draw>.be-fc,.be-svg.draw>.be-profit,.be-svg.draw>.be-loss,.be-svg.draw>.be-lab,.be-svg.draw>.be-pt{opacity:0;animation:befade .7s .9s var(--e-out) forwards}
+@keyframes befade{to{opacity:1}}
+@keyframes bedraw{to{stroke-dashoffset:0}}
+input[type=range]{-webkit-appearance:none;appearance:none;width:100%;height:28px;background:transparent;cursor:pointer;--p:50%}
+input[type=range]::-webkit-slider-runnable-track{height:6px;border-radius:6px;background:linear-gradient(90deg,var(--c-accent) var(--p),var(--c-paper-4) var(--p))}
+input[type=range]::-moz-range-track{height:6px;border-radius:6px;background:linear-gradient(90deg,var(--c-accent) var(--p),var(--c-paper-4) var(--p))}
+input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:22px;height:22px;margin-top:-8px;border-radius:50%;background:var(--c-paper-3);border:2px solid var(--c-accent);box-shadow:0 4px 12px -4px var(--c-shadow);transition:transform .2s var(--e-out)}
+input[type=range]::-moz-range-thumb{width:20px;height:20px;border-radius:50%;background:var(--c-paper-3);border:2px solid var(--c-accent)}
+input[type=range]:active::-webkit-slider-thumb{transform:scale(1.15)}
+.serif-num .pl{font-family:var(--f-body);font-weight:300;font-size:.62em;vertical-align:.32em;margin-left:.04em;color:var(--c-accent)}
+.be-svg .be-mt,.be-svg .be-lab text{paint-order:stroke;stroke:var(--c-paper);stroke-width:4px;stroke-linejoin:round}
+.be-svg .be-lab text{stroke:var(--c-paper-3)}
+/* Bodoni hairlines vanish at large optical sizes; numerals use a sturdier cut */
+.serif-num,.rc-code,.spec-code,.u-n,.topic .tn,.figs dd,.pl-n,.p-front b,.ir b,.cv-card b{font-optical-sizing:none!important;font-variation-settings:"opsz" 12!important}
+.spec-code{-webkit-text-stroke-width:1.8px}
+
+.c-layout{display:grid;grid-template-columns:200px minmax(0,1fr);gap:clamp(24px,4vw,64px);padding-bottom:clamp(60px,8vw,120px)}
+.c-index{position:sticky;top:calc(var(--nav-h) + 40px);align-self:start;display:grid;gap:6px}
+.c-index a{display:grid;gap:2px;padding:12px 14px;border-radius:14px;border:1px solid transparent;text-decoration:none;transition:background var(--d-2),border-color var(--d-2)}
+.c-index a b{font:700 22px/1 var(--f-display);letter-spacing:-.02em;color:var(--c-ink-3);transition:color var(--d-2)}
+.c-index a span{font:500 12px var(--f-mono);color:var(--c-ink-3)}
+.c-index a.on{background:var(--c-paper-2);border-color:var(--c-line-2)}
+.c-index a.on b,.c-index a:hover b{color:var(--c-accent)}
+@media (max-width:900px){.c-layout{grid-template-columns:1fr}.c-index{position:sticky;top:calc(var(--nav-h) + 20px);z-index:5;display:flex;overflow-x:auto;padding:6px;border-radius:var(--r-pill);background:var(--c-paper-2);border:1px solid var(--c-line);scrollbar-width:none}.c-index a{flex:none;display:flex;align-items:center;gap:8px;padding:8px 14px;border-radius:var(--r-pill)}.c-index a b{font-size:16px}}
+.spec{padding-block:clamp(40px,6vw,80px);border-bottom:1px solid var(--c-line);scroll-margin-top:100px}
+.spec:last-child{border-bottom:0}
+.spec-top{display:grid;grid-template-columns:auto minmax(0,1fr);gap:var(--s-6);align-items:start;margin-bottom:var(--s-6)}
+.spec-code{font:600 clamp(56px,8vw,120px)/.85 var(--f-display);letter-spacing:-.02em;color:transparent;-webkit-text-stroke:1.3px var(--c-accent);white-space:nowrap}
+@media (max-width:700px){.spec-top{grid-template-columns:1fr}}
+.pills{display:flex;flex-wrap:wrap;gap:8px}
+.papers2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.papers4{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+@media (max-width:700px){.papers2,.papers4{grid-template-columns:1fr}}
+.pcard{--pc:var(--c-accent);position:relative;display:grid;gap:10px;padding:var(--s-5);border-radius:var(--r-lg);background:var(--c-paper-2);border:1px solid var(--c-line);overflow:hidden}
+.pcard.cool{--pc:var(--c-cool)}.pcard.pink{--pc:var(--c-pink)}.pcard.ok{--pc:var(--c-ok)}
+.pcard::before{content:"";position:absolute;left:0;top:0;bottom:0;width:3px;background:var(--pc)}
+.pn{font:700 12px var(--f-mono);letter-spacing:.1em;text-transform:uppercase;color:var(--pc)}
+.pcard p{color:var(--c-ink-2);font-size:15px}
+.kv{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+.kv div{padding:10px 12px;border-radius:12px;background:var(--c-paper);border:1px solid var(--c-line)}
+.kv b{display:block;font:700 18px/1.1 var(--f-display);font-variant-numeric:tabular-nums}
+.kv span{font:500 10.5px var(--f-mono);letter-spacing:.06em;text-transform:uppercase;color:var(--c-ink-3)}
+.wb{height:6px;border-radius:6px;background:var(--c-paper-4);overflow:hidden}
+.wb i{display:block;height:100%;width:var(--w);background:var(--pc);border-radius:6px;transform-origin:0 50%;animation:grow 1.4s var(--e-out) both}
+@keyframes grow{from{transform:scaleX(0)}}
+.topicline{display:flex;flex-wrap:wrap;gap:8px;margin-top:var(--s-5)}
+.topicline a{display:inline-flex;align-items:center;gap:8px;height:36px;padding:0 13px;border-radius:var(--r-pill);border:1px solid var(--c-line-2);background:var(--c-paper-2);font:500 13.5px var(--f-body);color:var(--c-ink-2);text-decoration:none;white-space:nowrap;transition:border-color var(--d-2),color var(--d-2)}
+.topicline a b{font:700 12px var(--f-mono);color:var(--c-accent)}
+.topicline a:hover{border-color:var(--c-accent);color:var(--c-ink)}
+.spec-cta{display:flex;flex-wrap:wrap;align-items:center;gap:var(--s-4) var(--s-6);margin-top:var(--s-6)}
+.compare{border-radius:var(--r-lg);border:1px solid var(--c-line);overflow:hidden;background:var(--c-paper-2)}
+.cmp-row{display:grid;grid-template-columns:minmax(0,.7fr) minmax(0,1fr) minmax(0,1fr);gap:12px;padding:14px 18px;border-bottom:1px solid var(--c-line);font-size:15px}
+.cmp-row:last-child{border-bottom:0}
+.cmp-row span:first-child{font:500 12px var(--f-mono);letter-spacing:.06em;text-transform:uppercase;color:var(--c-ink-3);align-self:center}
+.cmp-h{background:var(--c-paper-3);font-weight:600}
+.fmt{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.fmt>div{position:relative;display:grid;gap:8px;align-content:start;padding:var(--s-5);border-radius:var(--r-lg);border:1px solid var(--c-line);background:var(--c-paper-2);min-height:150px;overflow:hidden}
+.fmt>div p{color:var(--c-ink-2);font-size:15px}
+.f-big{grid-row:span 2;background:linear-gradient(160deg,var(--c-paper-3),var(--c-paper-2))!important}
+.f-addr{margin-top:auto;font:600 clamp(26px,3vw,40px)/1 var(--f-display);color:transparent;-webkit-text-stroke:1.2px var(--c-line-2);letter-spacing:-.02em}
+.f-wide{grid-column:span 2}
+@media (max-width:760px){.fmt{grid-template-columns:1fr}.f-big{grid-row:auto}.f-wide{grid-column:auto}}
+.sot{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:var(--s-5);align-items:center;margin-top:var(--s-6);padding:var(--s-5) var(--s-6)}
+.sot-t{display:grid;gap:8px}
+.sot-t div{display:flex;justify-content:space-between;gap:12px;padding:12px 14px;border-radius:12px;background:var(--c-paper);border:1px solid var(--c-line)}
+.sot-t span{color:var(--c-accent);font-weight:700}
+.sot-t b{font-weight:600;font-size:14.5px;text-align:right}
+@media (max-width:760px){.sot{grid-template-columns:1fr;padding:var(--s-5)}}
+
+.weeks{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+.weeks li{display:grid;gap:8px;align-content:start;padding:var(--s-5);border-radius:var(--r-lg);border:1px solid var(--c-line);background:var(--c-paper-2);position:relative;overflow:hidden}
+.weeks li::after{content:"";position:absolute;left:0;bottom:0;height:3px;width:100%;background:var(--c-accent);transform-origin:0 50%;transform:scaleX(var(--p,.25))}
+.weeks li:nth-child(2)::after{--p:.5}.weeks li:nth-child(3)::after{--p:.75}.weeks li:nth-child(4)::after{--p:1}
+.weeks b{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--c-accent)}
+.weeks h3{font-size:19px}
+.weeks p{color:var(--c-ink-2);font-size:15px}
+@media (max-width:900px){.weeks{grid-template-columns:1fr 1fr}}
+@media (max-width:560px){.weeks{grid-template-columns:1fr}}
+.note{margin-top:12px;font-size:12px;color:var(--c-ink-3)}
+.topicline a{--gc:var(--c-accent)}
+.topicline a b{color:var(--gc)}
+.papers4.two{grid-template-columns:repeat(2,minmax(0,1fr))}
+@media (max-width:700px){.papers4.two{grid-template-columns:1fr}}
+.ao-strip{display:grid;gap:10px;margin-top:20px}
+.ao-bar{display:flex;gap:4px;border-radius:14px;overflow:hidden}
+.ao{flex:var(--w) 1 0;min-width:0;display:grid;gap:4px;padding:14px 12px;background:color-mix(in oklab,var(--c-accent) calc(40% - var(--i)*9%),var(--c-paper-2));border-radius:6px}
+.ao b{font-size:12px;color:var(--c-ink)}
+.ao span{font-size:13px;color:var(--c-ink-2);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+@media (max-width:620px){.ao-bar{flex-direction:column}.ao{flex:none}}
+.changes{margin-top:20px;padding:20px 22px;border-radius:18px;border:1px dashed var(--c-line-2);display:grid;gap:12px}
+.changes h3{font-size:22px}
+.changes ul{margin:0;padding-left:18px;display:grid;gap:8px;color:var(--c-ink-2)}
+.changes b{color:var(--c-ink)}
+
+</style>
+</head>
+<body data-page="courses">
+<a class="sr" href="#main">Skip to content</a>
+<div id="bg3d" aria-hidden="true"></div><div class="bg-veil" aria-hidden="true"></div>
+<header class="nav"><div class="wrap"><div class="nav-pill">
+<a class="brand" href="index.html" aria-label="Sir Sohail Ahmed Business, home"><span class="brand-mark"><svg viewBox="0 0 40 40" aria-hidden="true"><path d="M9 31V22M17 31V15M25 31V18M33 31V8" stroke="currentColor" stroke-width="4.2" stroke-linecap="round"/><path d="M8 13.5l8-6 7 4.5 10-6.5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" opacity=".55"/></svg></span><span><b>Sohail Ahmed</b><small>Business · O / A Level</small></span></a>
+<nav class="nav-links" aria-label="Main"><span class="nav-blob" aria-hidden="true"></span><a href="courses.html" data-p="courses"><span class="roll"><span data-t="Courses">Courses</span></span></a><a href="syllabus.html" data-p="syllabus"><span class="roll"><span data-t="Syllabus">Syllabus</span></span></a><a href="past-papers.html" data-p="papers"><span class="roll"><span data-t="Past papers">Past papers</span></span></a><a href="lab.html" data-p="lab"><span class="roll"><span data-t="Business Lab">Business Lab</span></span></a><a href="notes.html" data-p="notes"><span class="roll"><span data-t="Notes">Notes</span></span></a><a href="about.html" data-p="about"><span class="roll"><span data-t="Sir Sohail">Sir Sohail</span></span></a><a href="contact.html" data-p="contact"><span class="roll"><span data-t="Contact">Contact</span></span></a></nav>
+<div class="nav-tools">
+<button class="kbtn" type="button" data-cmdk aria-label="Search the site"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg><span>Search</span><kbd>⌘K</kbd></button>
+<button class="ibtn" type="button" data-cart-open aria-label="Open cart"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 8h14l-1 12H6zM9 8V6a3 3 0 016 0v2"/></svg><span class="badge" data-cart-n></span></button>
+<a class="btn btn-pri btn-sm enrol-cta mag" href="contact.html#enrol">Enrol</a>
+<button class="ibtn burger" type="button" aria-expanded="false" aria-controls="mmenu" aria-label="Menu"><span></span><span></span></button>
+</div>
+<div class="mmenu" id="mmenu"><a href="courses.html" data-p="courses">Courses<span>7115 · 0450 · 9609</span></a><a href="syllabus.html" data-p="syllabus">Syllabus<span>tracker</span></a><a href="past-papers.html" data-p="papers">Past papers<span>timer + MS</span></a><a href="lab.html" data-p="lab">Business Lab<span>break-even · ratios</span></a><a href="notes.html" data-p="notes">Notes<span>store</span></a><a href="about.html" data-p="about">Sir Sohail<span>case first</span></a><a href="contact.html" data-p="contact">Contact<span>enrol</span></a><div class="mm-tools"><a class="btn btn-pri btn-sm" style="flex:1" href="contact.html#enrol">Enrol now</a></div></div>
+</div></div></header>
+<main id="main">
+<header class="ph">
+  <div class="wrap">
+    <div class="crumb"><a href="index.html">Home</a><span>/</span><span>Courses</span></div>
+    <h1 data-kin>Three syllabuses, taught the way they're marked.</h1>
+    <p class="lede">Papers, weightings and units below come straight from Cambridge's published syllabuses: O Level Business 7081 and IGCSE Business 0264 (first exams 2027), O Level 7115 and IGCSE 0450 (last exams 2026), and AS &amp; A Level Business 9609 (2026–2028).</p>
+  </div>
+</header>
+
+<div class="wrap c-layout">
+  <aside class="c-index" aria-label="Courses on this page">
+    <a href="#ol" data-spy="ol"><b>7081</b><span>O Level</span></a>
+    <a href="#al" data-spy="al"><b>9609</b><span>AS &amp; A Level</span></a>
+    <a href="#ig" data-spy="ig"><b>0264</b><span>IGCSE</span></a>
+    <a href="#formats" data-spy="formats"><b>Ways</b><span>to learn</span></a>
+  </aside>
+
+  <div class="c-main">
+    <section class="spec" id="ol">
+      <div class="spec-top">
+        <span class="spec-code" aria-hidden="true">7081</span>
+        <div class="stack">
+          <h2>O Level Business</h2>
+          <p class="lede">Six units, from what a business is to how the economy and the wider world change its decisions. Two 90-minute papers, both compulsory, graded A* to E in the June and November series.</p>
+          <div class="pills"><span class="pill">First exams 2027 · replaces 7115</span><span class="pill">6 units · 29 topics</span><span class="pill">A*–E</span></div>
+        </div>
+      </div>
+      <div class="papers4 two" data-rv-stagger>
+        <div class="pcard"><span class="pn">Paper 1</span><h3>Short Answer and Data Response</h3><p>Four compulsory questions mixing short answers with structured questions on tables, graphs and images.</p><div class="kv"><div><b>1h 30m</b><span>time</span></div><div><b>80</b><span>marks</span></div><div><b>50%</b><span>weight</span></div></div><div class="wb"><i style="--w:50%"></i></div></div>
+        <div class="pcard cool"><span class="pn">Paper 2</span><h3>Case Study</h3><p>Four compulsory questions on a case-study insert with appendices: tables, graphs, newspaper extracts and adverts.</p><div class="kv"><div><b>1h 30m</b><span>time</span></div><div><b>80</b><span>marks</span></div><div><b>50%</b><span>weight</span></div></div><div class="wb"><i style="--w:50%"></i></div></div>
+      </div>
+      <div class="ao-strip" data-rv>
+        <span class="lbl">Where the marks come from · 7081 assessment objectives</span>
+        <div class="ao-bar" id="aoBar"></div>
+      </div>
+      <div class="changes" data-rv>
+        <h3>What changes from 7115 to 7081</h3>
+        <ul>
+          <li><b>New topics</b> on technology in production (4.2) and sustainable production (4.3).</li>
+          <li><b>Digital communication</b> added to People in business, and a <b>formulas and ratios list</b> you're expected to use.</li>
+          <li><b>More marks for application</b>: AO2 rises to 30%. Paper 1 questions now have four parts, and every Paper 2 part (a) is applied to the case.</li>
+          <li><b>Same shape</b>: two papers, 90 minutes and 80 marks each. 2026 candidates still sit 7115.</li>
+        </ul>
+      </div>
+      <div class="topicline" data-syl="ol"></div>
+      <div class="spec-cta"><a class="btn btn-pri mag" href="contact.html#enrol">Enrol in O Level</a><a class="btn-link" href="past-papers.html#p-7115">7115 past papers</a><a class="btn-link" href="notes.html">O Level notes</a></div>
+    </section>
+
+    <section class="spec" id="al">
+      <div class="spec-top">
+        <span class="spec-code" aria-hidden="true">9609</span>
+        <div class="stack">
+          <h2>AS &amp; A Level Business</h2>
+          <p class="lede">Ten units over two years. AS covers the core of every department in Papers 1 and 2. The A Level year adds strategy, finance and decision-making in Papers 3 and 4, which assume everything from AS.</p>
+          <div class="pills"><span class="pill">2026–2028 syllabus</span><span class="pill">10 units · 34 topics</span><span class="pill">AS · A Level</span></div>
+        </div>
+      </div>
+      <div class="papers4" data-rv-stagger>
+        <div class="pcard"><span class="pn">Paper 1 · AS</span><h3>Business Concepts 1</h3><p>Short-answer and essay questions on the AS units.</p><div class="kv"><div><b>1h 15m</b><span>time</span></div><div><b>40</b><span>marks</span></div><div><b>40%</b><span>of AS</span></div></div><div class="wb"><i style="--w:40%"></i></div></div>
+        <div class="pcard cool"><span class="pn">Paper 2 · AS</span><h3>Business Concepts 2</h3><p>Data-response questions applied to business situations.</p><div class="kv"><div><b>1h 30m</b><span>time</span></div><div><b>60</b><span>marks</span></div><div><b>60%</b><span>of AS</span></div></div><div class="wb"><i style="--w:60%"></i></div></div>
+        <div class="pcard ok"><span class="pn">Paper 3 · A Level</span><h3>Business Decision-Making</h3><p>A case study where you analyse data and recommend decisions.</p><div class="kv"><div><b>1h 45m</b><span>time</span></div><div><b>60</b><span>marks</span></div><div><b>30%</b><span>of A Level</span></div></div><div class="wb"><i style="--w:30%"></i></div></div>
+        <div class="pcard pink"><span class="pn">Paper 4 · A Level</span><h3>Business Strategy</h3><p>A case study on strategic choices and their evaluation.</p><div class="kv"><div><b>1h 15m</b><span>time</span></div><div><b>40</b><span>marks</span></div><div><b>20%</b><span>of A Level</span></div></div><div class="wb"><i style="--w:20%"></i></div></div>
+      </div>
+      <p class="mono note">For the full A Level, Papers 1 and 2 count for 20% and 30%. AS is graded A–E, A Level A*–E.</p>
+      <div class="topicline" data-syl="al"></div>
+      <div class="spec-cta"><a class="btn btn-pri mag" href="contact.html#enrol">Enrol in A Level</a><a class="btn-link" href="past-papers.html#p-9609">9609 past papers</a><a class="btn-link" href="lab.html#inv">Investment appraisal tool</a></div>
+    </section>
+
+    <section class="spec" id="ig">
+      <div class="spec-top">
+        <span class="spec-code" aria-hidden="true">0264</span>
+        <div class="stack">
+          <h2>IGCSE Business</h2>
+          <p class="lede">The same six units as O Level 7081, examined the same way: Paper 1 short answer and data response, Paper 2 case study. IGCSE is graded A* to G.</p>
+          <div class="pills"><span class="pill">First exams 2027 · replaces 0450</span><span class="pill">6 units</span><span class="pill">A*–G</span></div>
+        </div>
+      </div>
+      <div class="compare">
+        <div class="cmp-row cmp-h"><span></span><span>IGCSE 0450 (to 2026)</span><span>IGCSE 0264 (from 2027)</span></div>
+        <div class="cmp-row"><span>Paper 1</span><span>Short answer &amp; data response · 1h 30m · 80 marks · 50%</span><span>Short answer &amp; data response · 1h 30m · 80 marks · 50%</span></div>
+        <div class="cmp-row"><span>Paper 2</span><span>Case study · 1h 30m · 80 marks · 50%</span><span>Case study · 1h 30m · 80 marks · 50%</span></div>
+        <div class="cmp-row"><span>Content</span><span>Six units</span><span>Six units, plus technology, sustainability and a formulas list</span></div>
+        <div class="cmp-row"><span>Grades</span><span>A*–G</span><span>A*–G</span></div>
+      </div>
+      <div class="spec-cta"><a class="btn btn-pri mag" href="contact.html#enrol">Enrol in IGCSE</a><a class="btn-link" href="past-papers.html#p-0450">0450 past papers</a></div>
+    </section>
+
+    <section class="spec" id="formats">
+      <h2 style="margin-bottom:var(--s-6)">How the course runs.</h2>
+      <div class="fmt" data-rv-stagger>
+        <div class="f-big spot"><h3>In class or online</h3><p>Classes at SWK Gulshan and Credo College in Karachi, and live online through SMAF Horizon Online Academy for students outside the city.</p><span class="f-addr">Karachi · Online</span></div>
+        <div class="spot"><h3>Case-study practice</h3><p>Every unit is taught through a real business and its numbers, then tested on a past case.</p></div>
+        <div class="spot"><h3>Topical past papers</h3><p>Past-paper questions by topic, with the mark scheme and a model answer.</p></div>
+        <div class="spot"><h3>Written notes</h3><p>Notes for every unit, written the way mark schemes reward answers.</p></div>
+        <div class="spot"><h3>Workshops</h3><p>Pre-exam Business workshops, announced first on Instagram.</p></div>
+        <div class="spot f-wide"><h3>Exam technique, every week</h3><p>Command words, timing, and how to climb from knowledge to evaluation, taught alongside the content rather than after it.</p></div>
+      </div>
+    </section>
+  </div>
+</div>
+
+</main>
+<footer class="foot"><div class="wrap">
+<p class="lede" style="margin-bottom:var(--s-5)">O Level, IGCSE and A Level Business, taught through the case study in Karachi and online by Sir Sohail Ahmed.</p>
+<a class="foot-big" href="contact.html#enrol" aria-label="Enrol with Sir Sohail Ahmed">Sohail Ahmed</a>
+<div class="foot-row"><nav aria-label="Footer"><a href="courses.html">Courses</a><a href="syllabus.html">Syllabus</a><a href="past-papers.html">Past papers</a><a href="lab.html">Business Lab</a><a href="notes.html">Notes</a><a href="about.html">Sir Sohail</a><a href="contact.html">Contact</a></nav><div style="display:flex;gap:8px;flex-wrap:wrap"><a class="btn btn-sm" href="https://instagram.com/bizbysohail" target="_blank" rel="noopener">Instagram</a><a class="btn btn-sm" href="https://facebook.com/Bizbysohail" target="_blank" rel="noopener">Facebook</a><a class="btn btn-sm btn-pri" href="https://wa.me/923128262570" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 00-8.6 15.1L2 22l5-1.3A10 10 0 1012 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.3-.3.6-.3.8-.3h.6c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.4.6-.4.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.3 2.4 1.5.3.1.5.1.6-.1l.8-1c.2-.3.4-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.2.1.7-.1 1.3z"/></svg>WhatsApp</a></div></div>
+<div class="foot-meta"><span>© <span data-year>2026</span> Sir Sohail Ahmed · Business Studies · Karachi</span><span>Syllabus details summarised from Cambridge International's published syllabuses. Not affiliated with Cambridge.</span><span>Website by <a href="https://nexlyr.solutions" target="_blank" rel="noopener">Nexlyr Solutions</a></span></div>
+</div></footer>
+
+<div class="cmdk" id="cmdk" role="dialog" aria-modal="true" aria-label="Search"><div class="scrim"></div><div class="cmdk-box"><div class="cmdk-in"><span>&gt;</span><input id="cmdkIn" placeholder="Jump to a page, topic or action…" autocomplete="off" aria-label="Search"><kbd class="pill" style="height:24px">esc</kbd></div><div class="cmdk-list" id="cmdkList"></div><div class="cmdk-foot"><span>↑↓ move</span><span>↵ open</span><span>/ or ⌘K toggles</span></div></div></div>
+<div class="modal" id="modal" aria-hidden="true"><div class="scrim" data-close></div><div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="mTitle"><button class="x" type="button" data-close aria-label="Close">×</button><div id="modalBody"></div></div></div>
+<aside class="cart" id="cart" aria-hidden="true" aria-label="Cart"><div class="cart-h"><b>Your cart</b><button class="x" id="cartX" type="button" aria-label="Close cart">×</button></div><div class="cart-b" id="cartBody"></div>
+<form class="cart-f" id="cartFoot" novalidate hidden><div class="cart-tot"><span>Total</span><b id="cartTotal">Rs. 0</b></div>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:8px"><div class="field"><label for="coName">Name</label><input id="coName" autocomplete="name"></div><div class="field"><label for="coPhone">WhatsApp</label><input id="coPhone" inputmode="tel" autocomplete="tel" placeholder="03XX XXXXXXX"></div></div>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:8px"><div class="field"><label for="coCity">City</label><input id="coCity" autocomplete="address-level2" placeholder="Karachi"></div><div class="field"><label for="coPay">Pay by</label><select id="coPay"><option>Cash on delivery</option><option>Bank transfer</option><option>JazzCash</option><option>Easypaisa</option></select></div></div>
+<div class="field"><label for="coAddr">Address (printed orders)</label><input id="coAddr" autocomplete="street-address"></div>
+<p id="coErr" role="alert" style="font:500 12.5px var(--f-mono);color:var(--c-bad);min-height:1em"></p>
+<button class="btn btn-pri" type="submit"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 00-8.6 15.1L2 22l5-1.3A10 10 0 1012 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.3-.3.6-.3.8-.3h.6c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.4.6-.4.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.3 2.4 1.5.3.1.5.1.6-.1l.8-1c.2-.3.4-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.2.1.7-.1 1.3z"/></svg>Order on WhatsApp</button></form></aside>
+
+<button class="bot-fab" id="botFab" type="button" aria-expanded="false" aria-controls="bot"><span class="bf-i"><svg viewBox="0 0 40 40" aria-hidden="true"><path d="M9 31V22M17 31V15M25 31V18M33 31V8" stroke="currentColor" stroke-width="4.2" stroke-linecap="round"/><path d="M8 13.5l8-6 7 4.5 10-6.5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" opacity=".55"/></svg></span><span class="bf-t">Ask Biz bot</span></button>
+<section class="bot" id="bot" aria-hidden="true" aria-label="Biz bot"><div class="bot-h"><span class="av"><svg viewBox="0 0 40 40" aria-hidden="true"><path d="M9 31V22M17 31V15M25 31V18M33 31V8" stroke="currentColor" stroke-width="4.2" stroke-linecap="round"/><path d="M8 13.5l8-6 7 4.5 10-6.5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" opacity=".55"/></svg></span><div><b>Biz bot</b><small><span class="live"></span>answers instantly</small></div><span class="ctx" id="botCtx" hidden></span><button class="x" id="botX" type="button" aria-label="Close chat">×</button></div>
+<div class="bot-m" id="botMsgs" aria-live="polite"></div><div class="bot-s" id="botSug"></div>
+<form id="botForm"><input id="botIn" placeholder="Define stakeholder, ROCE formula, paper 2…" autocomplete="off" aria-label="Message"><button type="submit" aria-label="Send"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button></form></section>
+<div class="dock" id="dock" role="group" aria-label="Display and sound">
+<button class="ibtn" type="button" data-theme-btn aria-label="Switch light or dark theme" title="Annual report / boardroom"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" data-theme-icon><path d="M21 12.8A9 9 0 1111.2 3a7 7 0 009.8 9.8z"/></svg></button>
+<button class="ibtn" type="button" data-snd aria-pressed="true" aria-label="Sound effects" title="Sound"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M11 5L6 9H3v6h3l5 4zM16 9a4 4 0 010 6M19 6a8 8 0 010 12"/></svg></button>
+<button class="ibtn top-btn" type="button" id="topBtn" aria-label="Back to top" title="Back to top"><svg class="tp-ring" viewBox="0 0 44 44" aria-hidden="true"><circle cx="22" cy="22" r="19"/></svg><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><path d="M12 19V5M6 11l6-6 6 6"/></svg></button>
+</div>
+<div class="cursor" aria-hidden="true"><i class="c-ring"></i><i class="c-dot"></i></div>
+<div class="toast" id="toast" role="status"></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" onload="window.BIZ&&BIZ.initBg&&BIZ.initBg()" onerror="document.documentElement.classList.add('no-webgl')"></script>
+<script>
+/* Sir Sohail Ahmed · Business · shared engine (inlined into every page at build time) */
+(function(){
+"use strict";
+const $=(s,r=document)=>r.querySelector(s), $$=(s,r=document)=>[...r.querySelectorAll(s)];
+const RM=matchMedia("(prefers-reduced-motion: reduce)").matches;
+const FINE=matchMedia("(hover:hover) and (pointer:fine)").matches;
+const store={get(k,d){try{const v=localStorage.getItem(k);return v===null?d:JSON.parse(v)}catch(e){return d}},set(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}}};
+const sess={get(k,d){try{const v=sessionStorage.getItem(k);return v===null?d:JSON.parse(v)}catch(e){return d}},set(k,v){try{sessionStorage.setItem(k,JSON.stringify(v))}catch(e){}}};
+const esc=s=>String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+/* ---- CONTACT: Sir Sohail's WhatsApp (country code, no + or spaces). Second public number: 0333 262 2283 ---- */
+const WA="923128262570", WA_DISPLAY="0312 826 2570", IG="https://instagram.com/bizbysohail", FB="https://facebook.com/Bizbysohail";
+const wa=t=>"https://wa.me/"+WA+"?text="+encodeURIComponent(t);
+const PAGE=document.body.dataset.page||"home";
+
+/* ======================= DATA ======================= */
+/* Syllabus content: Cambridge O Level Business 7081 and IGCSE Business 0264 (first exams 2027, replacing 7115 and 0450, whose last exams are in 2026 with the same six units),
+   and Cambridge International AS & A Level Business 9609 (2026–2028). Sub-topic notes are short study summaries, not Cambridge wording. */
+const OL_TOPICS=[
+ {n:"1.1",u:1,t:"Business activity",k:["Needs, wants, scarcity and opportunity cost","Specialisation and the division of labour","Why businesses exist and how they add value"]},
+ {n:"1.2",u:1,t:"Economic sectors",k:["Primary, secondary and tertiary sectors","How a country's sector mix changes over time","Public and private sectors in a mixed economy"]},
+ {n:"1.3",u:1,t:"Enterprise, business growth and size",k:["What makes an entrepreneur and a business plan","Measuring size: employees, revenue, capital employed","Internal and external growth, mergers and takeovers","Why some businesses stay small, and why some fail"]},
+ {n:"1.4",u:1,t:"Types of business organisation",k:["Sole traders, partnerships, private and public limited companies","Limited and unlimited liability","Franchises, joint ventures and public corporations"]},
+ {n:"1.5",u:1,t:"Business objectives and stakeholder objectives",k:["Survival, growth, profit, market share and social objectives","Internal and external stakeholders and what each wants","Conflicts between stakeholder objectives"]},
+ {n:"2.1",u:2,t:"Human resource management (HRM)",k:["Recruitment and selection: job description, person specification, interviews","Internal vs external recruitment","Training: induction, on-the-job, off-the-job","Dismissal, redundancy and employment law"]},
+ {n:"2.2",u:2,t:"Organisation and management",k:["Organisation charts, hierarchy, span of control, chain of command","Functions of management","Leadership styles: autocratic, democratic, laissez-faire","Trade unions"]},
+ {n:"2.3",u:2,t:"Methods of communication",k:["Internal and external communication","Choosing a method, including digital communication","Barriers to communication and how to reduce them"]},
+ {n:"2.4",u:2,t:"Motivating employees",k:["Maslow, Taylor and Herzberg","Financial rewards: wages, salary, bonus, commission, profit sharing","Non-financial methods: job rotation, enrichment, enlargement, teamwork"]},
+ {n:"3.1",u:3,t:"Marketing and the market",k:["The role of marketing and customer needs","Mass and niche markets","Market segmentation"]},
+ {n:"3.2",u:3,t:"Market research",k:["Primary and secondary research methods","Sampling and questionnaire design","Presenting and analysing data"]},
+ {n:"3.3",u:3,t:"Marketing mix",k:["Product, price, place and promotion","Product life cycle and extension strategies","Pricing methods, channels and e-commerce","Choosing a mix that fits the target market"]},
+ {n:"3.4",u:3,t:"Legal controls",k:["Laws that protect consumers","Misleading promotion and unsafe products","How legal controls change marketing decisions"]},
+ {n:"4.1",u:4,t:"Production of goods and services",k:["Job, batch and flow production","Productivity and how to raise it","Inventory and lean production, including JIT"]},
+ {n:"4.2",u:4,t:"Technology and production of goods and services",k:["Automation, robotics and computer-aided design","Benefits and drawbacks of new technology","Effects on workers and costs"]},
+ {n:"4.3",u:4,t:"Sustainable production of goods and services",k:["Reducing waste, energy and resource use","Sustainable sourcing","Costs and benefits of producing sustainably"]},
+ {n:"4.4",u:4,t:"Costs, scale of production and break-even analysis",k:["Fixed, variable, total and average costs","Economies and diseconomies of scale","Break-even charts, break-even output and margin of safety"]},
+ {n:"4.5",u:4,t:"Quality of goods and services",k:["Quality control, quality assurance and TQM","Why quality matters to customers and costs"]},
+ {n:"4.6",u:4,t:"Location decisions",k:["Factors in locating a factory, shop or service","Choosing a country to locate in","Legal and government influences on location"]},
+ {n:"5.1",u:5,t:"Business finance",k:["Why businesses need finance: start-up, working capital, growth","Internal and external, short- and long-term sources","Choosing the right source"]},
+ {n:"5.2",u:5,t:"Cash flow forecast",k:["Cash inflows and outflows","Building and reading a cash-flow forecast","Fixing short-term cash problems"]},
+ {n:"5.3",u:5,t:"Profit and loss",k:["Revenue, cost of sales, gross profit and profit","Why profit matters and how it is used","Reading an income statement"]},
+ {n:"5.4",u:5,t:"Statement of financial position",k:["Assets and liabilities, current and non-current","Reading a statement of financial position"]},
+ {n:"5.5",u:5,t:"Analysis of accounts",k:["Profitability ratios: gross profit margin, profit margin, ROCE","Liquidity ratios: current ratio, acid test","Who uses accounts and why"]},
+ {n:"6.1",u:6,t:"Economic issues",k:["The business cycle","Government objectives: growth, low unemployment, low inflation","Fiscal, monetary and supply-side policy and their effects on business"]},
+ {n:"6.2",u:6,t:"Business and the international economy",k:["Globalisation, free trade and protectionism","Multinational companies: benefits and drawbacks","Exchange rates and their effect on exporters and importers"]},
+ {n:"6.3",u:6,t:"Business and the environment",k:["Environmental costs of business activity","Government and pressure to reduce them"]},
+ {n:"6.4",u:6,t:"Business and ethical issues",k:["Ethical decisions and their costs","Corporate social responsibility"]},
+ {n:"6.5",u:6,t:"Pressure groups",k:["How pressure groups influence business decisions","When a business should respond"]}];
+const UNITS_OL={1:"Understanding business activity",2:"People in business",3:"Marketing",4:"Operations management",5:"Financial information and decisions",6:"External influences on business activity"};
+const AL_TOPICS=[
+ {n:"1.1",u:1,t:"Enterprise",k:["The nature of business activity and adding value","Entrepreneurs and intrapreneurs","Social enterprise"]},
+ {n:"1.2",u:1,t:"Business structure",k:["Economic sectors and the public/private split","Legal structures and their advantages"]},
+ {n:"1.3",u:1,t:"Size of business",k:["Measuring size","Small businesses and family businesses","Internal and external growth"]},
+ {n:"1.4",u:1,t:"Business objectives",k:["Corporate objectives and SMART targets","Objectives, strategy and tactics","CSR and ethics"]},
+ {n:"1.5",u:1,t:"Stakeholders in a business",k:["Stakeholder roles, rights and responsibilities","Conflicting stakeholder aims"]},
+ {n:"2.1",u:2,t:"Human resource management (HRM)",k:["Workforce planning, recruitment and selection","Training and development, appraisal","Morale, labour turnover and employment contracts"]},
+ {n:"2.2",u:2,t:"Motivation",k:["Taylor, Mayo, Maslow, Herzberg, McClelland, Vroom","Financial and non-financial motivators"]},
+ {n:"2.3",u:2,t:"Management",k:["Functions and roles of managers","Leadership styles and McGregor's Theory X and Y"]},
+ {n:"3.1",u:3,t:"The nature of marketing",k:["Marketing objectives and the market","Demand, supply and market size","Segmentation, targeting and positioning"]},
+ {n:"3.2",u:3,t:"Market research",k:["Primary and secondary research","Sampling methods","Analysing results"]},
+ {n:"3.3",u:3,t:"The marketing mix",k:["The 4Ps and 7Ps","Product portfolio and life cycle","Pricing, promotion and distribution decisions"]},
+ {n:"4.1",u:4,t:"The nature of operations",k:["Inputs, transformation and outputs","Efficiency, effectiveness and productivity","Job, batch, flow and mass customisation"]},
+ {n:"4.2",u:4,t:"Inventory management",k:["Why hold inventory and its costs","Inventory control charts","Just-in-time"]},
+ {n:"4.3",u:4,t:"Capacity utilisation and outsourcing",k:["Calculating capacity utilisation","Fixing under- and over-utilisation","Outsourcing: benefits and risks"]},
+ {n:"5.1",u:5,t:"Business finance",k:["Why businesses need finance","Working capital and its management"]},
+ {n:"5.2",u:5,t:"Sources of finance",k:["Internal and external sources","Choosing a source: cost, control, risk"]},
+ {n:"5.3",u:5,t:"Forecasting and managing cash flows",k:["Cash-flow forecasts","Improving cash flow"]},
+ {n:"5.4",u:5,t:"Costs",k:["Types of cost and contribution","Break-even analysis and its limits","Uses of cost information"]},
+ {n:"5.5",u:5,t:"Budgets",k:["Purpose of budgets","Variance analysis"]},
+ {n:"6.1",u:6,t:"External influences on business activity",k:["Political, legal, economic, social, technological and environmental factors","Government policy and business"]},
+ {n:"6.2",u:6,t:"Business strategy",k:["Strategic management","SWOT, PEST, Ansoff, Porter, Boston Matrix","Decision trees and force-field analysis"]},
+ {n:"7.1",u:7,t:"Organisational structure",k:["Hierarchy, span of control, delegation","Centralisation and decentralisation","Matrix and flat structures"]},
+ {n:"7.2",u:7,t:"Business communication",k:["Communication methods and networks","Barriers and their effects"]},
+ {n:"7.3",u:7,t:"Leadership",k:["Leadership theories and styles","Emotional intelligence"]},
+ {n:"7.4",u:7,t:"Human resource management (HRM) strategy",k:["Hard and soft HRM","Measuring HR performance","Management and workforce relations"]},
+ {n:"8.1",u:8,t:"Marketing analysis",k:["Price, income and promotional elasticity","Sales forecasting"]},
+ {n:"8.2",u:8,t:"Marketing strategy",k:["Marketing plans and budgets","International marketing","Digital marketing"]},
+ {n:"9.1",u:9,t:"Location and scale",k:["Location decisions, national and international","Economies and diseconomies of scale"]},
+ {n:"9.2",u:9,t:"Quality management",k:["Quality control and assurance","TQM, Kaizen and benchmarking"]},
+ {n:"9.3",u:9,t:"Operations strategy",k:["Lean production","Research and development","Project management and critical path analysis"]},
+ {n:"10.1",u:10,t:"Financial statements",k:["Income statement and statement of financial position","Inventory valuation and depreciation"]},
+ {n:"10.2",u:10,t:"Analysis of published accounts",k:["Liquidity, efficiency, gearing, profitability and investor ratios","Limits of ratio analysis"]},
+ {n:"10.3",u:10,t:"Investment appraisal",k:["Payback, ARR and NPV","Qualitative factors in investment decisions"]},
+ {n:"10.4",u:10,t:"Finance and accounting strategy",k:["Using accounting data in strategy","Contribution and costing methods"]}];
+const UNITS_AL={1:"Business and its environment",2:"Human resource management",3:"Marketing",4:"Operations management",5:"Finance and accounting",6:"Business and its environment",7:"Human resource management",8:"Marketing",9:"Operations management",10:"Finance and accounting"};
+const SYL={
+ ol:{label:"O Level Business 7081",short:"7081",old:"7115",word:"Topic",units:UNITS_OL,note:"First exams 2027. Students sitting O Level in 2026 take Business Studies 7115, which has the same six units.",topics:OL_TOPICS},
+ al:{label:"AS & A Level Business 9609",short:"9609",word:"Topic",units:UNITS_AL,note:"Units 1–5 are AS Level (Papers 1 and 2). Units 6–10 are the A Level year (Papers 3 and 4), which assumes everything in AS.",topics:AL_TOPICS},
+ ig:{label:"IGCSE Business 0264",short:"0264",old:"0450",word:"Topic",units:UNITS_OL,note:"First exams 2027, replacing IGCSE Business Studies 0450 (last exams 2026). The content matches O Level 7081.",topics:OL_TOPICS}
+};
+/* department colour for each unit (the site treats the syllabus like a company) */
+const DEPT={1:"hq",2:"people",3:"mkt",4:"ops",5:"fin",6:"ext",7:"people",8:"mkt",9:"ops",10:"fin"};
+const DNAME={hq:"Head office",people:"People",mkt:"Marketing",ops:"Operations",fin:"Finance",ext:"External"};
+const deptOf=(key,t)=>{ if(key==="al"&&t.u===6) return t.n==="6.1"?"ext":"hq"; return DEPT[t.u]; };
+/* Paper facts used by the past-papers page, the timer and the bot */
+const PMETA={
+ "7115":{name:"O Level Business Studies",grades:"A*–E",papers:{1:{n:"Short Answer and Data Response",min:90,m:80,w:"50%"},2:{n:"Case Study",min:90,m:80,w:"50%"}}},
+ "0450":{name:"IGCSE Business Studies",grades:"A*–G",papers:{1:{n:"Short Answer and Data Response",min:90,m:80,w:"50%"},2:{n:"Case Study",min:90,m:80,w:"50%"}}},
+ "9609":{name:"AS & A Level Business",grades:"A*–E",papers:{1:{n:"Business Concepts 1",min:75,m:40,w:"40% AS · 20% A Level"},2:{n:"Business Concepts 2",min:90,m:60,w:"60% AS · 30% A Level"},3:{n:"Business Decision-Making",min:105,m:60,w:"30% A Level"},4:{n:"Business Strategy",min:75,m:40,w:"20% A Level"}}}
+};
+/* Assessment objectives, O Level 7081 (whole qualification) */
+const AO=[["AO1","Knowledge and understanding",35],["AO2","Application",30],["AO3","Analysis",22],["AO4","Evaluation",13]];
+/* Notes catalogue — titles & prices are demo values; edit here and every page updates */
+const PRODUCTS=[
+ {id:"ol-v1",code:"7081",lvl:"O Level · IGCSE",t:"Business Notes · Volume 1",d:"Units 1–3 written as exam answers: business activity, organisations, stakeholders, people in business and marketing.",print:2200,pdf:1200,cc:"var(--c-accent)"},
+ {id:"ol-v2",code:"7081",lvl:"O Level · IGCSE",t:"Business Notes · Volume 2",d:"Units 4–6: operations, break-even, finance, accounts, ratios and the external environment.",print:2200,pdf:1200,cc:"var(--c-cool)"},
+ {id:"ol-case",code:"7081",lvl:"O Level · IGCSE",t:"The Case Study Playbook",d:"How to read a Paper 2 insert, pull evidence from the appendices and write the 12-mark recommendation.",print:1800,pdf:950,cc:"var(--c-bad)"},
+ {id:"ol-terms",code:"7081",lvl:"O Level · IGCSE",t:"Key Terms & Formula Sheet",d:"Every key term in one line, plus the formulas and ratios with a worked example for each.",print:850,pdf:450,cc:"var(--c-eco)"},
+ {id:"ol-p1",code:"7115",lvl:"O Level",t:"Topical Paper 1 Book",d:"Short-answer and data-response questions sorted by topic, with mark-scheme answers alongside.",print:2800,pdf:1500,cc:"var(--c-pink)"},
+ {id:"ol-p2",code:"7115",lvl:"O Level",t:"Topical Paper 2 Case Studies",d:"Past case studies grouped by the decision they ask for, with full-mark answers to compare against.",print:3000,pdf:1600,cc:"var(--c-accent)"},
+ {id:"as-n",code:"9609",lvl:"AS Level",t:"AS Business Notes · Units 1–5",d:"The full AS year for Papers 1 and 2: enterprise, HRM, marketing, operations and finance.",print:3200,pdf:1800,cc:"var(--c-cool)"},
+ {id:"a2-n",code:"9609",lvl:"A Level",t:"A2 Strategy Notes · Units 6–10",d:"Strategy tools, elasticity, investment appraisal and ratio analysis for Papers 3 and 4.",print:3400,pdf:1900,cc:"var(--c-eco)"},
+ {id:"a2-ess",code:"9609",lvl:"A Level",t:"Paper 3 & 4 Evaluation Bank",d:"Model 20-mark answers with the judgement written out, so you see how evaluation is actually rewarded.",print:2400,pdf:1300,cc:"var(--c-bad)"}
+];
+/* Key terms (standard textbook definitions). [term, definition, topic] */
+const DEFS=[
+ ["Opportunity cost","the next best alternative given up when a choice is made","1.1"],
+ ["Added value","the difference between the selling price of a product and the cost of the materials and bought-in components used to make it","1.1"],
+ ["Specialisation","when people or businesses concentrate on what they are best at producing","1.1"],
+ ["Division of labour","splitting production into separate tasks, each done by a different worker","1.1"],
+ ["Primary sector","businesses that extract natural resources, such as farming, fishing and mining","1.2"],
+ ["Secondary sector","businesses that manufacture or process raw materials into products","1.2"],
+ ["Tertiary sector","businesses that provide services to consumers and other businesses","1.2"],
+ ["Entrepreneur","a person who organises, operates and takes the risk for a new business venture","1.3"],
+ ["Business plan","a document describing a business, its objectives, its strategies, the market it is in and its financial forecasts","1.3"],
+ ["Internal growth","when a business expands its existing operations, for example by opening new branches","1.3"],
+ ["Horizontal merger","when one business merges with or takes over another in the same industry at the same stage of production","1.3"],
+ ["Vertical merger","when one business merges with or takes over another in the same industry but at a different stage of production","1.3"],
+ ["Conglomerate merger","when one business merges with or takes over a business in a completely different industry","1.3"],
+ ["Limited liability","the owners of a business can only lose the money they invested in it, not their personal possessions","1.4"],
+ ["Unlimited liability","the owners of a business are responsible for all its debts, even using personal possessions","1.4"],
+ ["Franchise","a business that gives others the right to use its name, logo and business model in return for a fee and royalties","1.4"],
+ ["Stakeholder","any person or group with a direct interest in the activities and performance of a business","1.5"],
+ ["Recruitment","the process of identifying that a business needs a new employee, up to the point where applications arrive","2.1"],
+ ["Job description","a document that describes the responsibilities and duties of a job","2.1"],
+ ["Person specification","a document that outlines the qualifications, skills, experience and qualities needed for a job","2.1"],
+ ["Span of control","the number of subordinates working directly under one manager","2.2"],
+ ["Chain of command","the structure that allows instructions to pass down from senior management to lower levels","2.2"],
+ ["Delegation","giving a subordinate the authority to perform particular tasks","2.2"],
+ ["Motivation","the reasons why employees want to work hard and work effectively for the business","2.4"],
+ ["Job enrichment","organising work so that employees use their full abilities, for example by adding more responsibility","2.4"],
+ ["Market segment","an identifiable sub-group of a whole market in which consumers have similar characteristics or preferences","3.1"],
+ ["Niche market","a small, usually specialised, segment of a much larger market","3.1"],
+ ["Primary research","the collection of original data directly from the market, also called field research","3.2"],
+ ["Secondary research","the use of information that has already been collected, also called desk research","3.2"],
+ ["Product life cycle","the stages a product goes through from its introduction, through growth and maturity, to decline","3.3"],
+ ["Price skimming","setting a high price for a new product, often one with a unique feature","3.3"],
+ ["Penetration pricing","setting a low price to attract customers to a new product","3.3"],
+ ["Productivity","a measure of the efficiency of inputs used in production; often output per worker","4.1"],
+ ["Lean production","techniques that cut waste and raise efficiency in production","4.1"],
+ ["Just-in-time","a way of eliminating the need to hold inventory by ordering supplies only when they are needed","4.1"],
+ ["Fixed costs","costs that do not change with the level of output in the short run","4.4"],
+ ["Variable costs","costs that change directly with the number of products made","4.4"],
+ ["Break-even point","the level of sales at which total revenue equals total costs","4.4"],
+ ["Margin of safety","the amount by which sales exceed the break-even level of sales","4.4"],
+ ["Economies of scale","factors that lower the average cost of production as a business grows","4.4"],
+ ["Quality assurance","checking for quality throughout the production process","4.5"],
+ ["Working capital","the capital a business needs to pay its day-to-day expenses; current assets minus current liabilities","5.1"],
+ ["Cash flow","the cash inflows and cash outflows of a business over a period of time","5.2"],
+ ["Gross profit","revenue minus the cost of sales","5.3"],
+ ["Liquidity","the ability of a business to pay back its short-term debts","5.5"],
+ ["Inflation","a general rise in the level of prices in an economy over time","6.1"],
+ ["Exchange rate","the price of one currency in terms of another","6.2"],
+ ["Globalisation","the increasing freedom of movement of goods, capital and people around the world","6.2"],
+ ["Pressure group","a group of people who try to change business or government decisions","6.5"]
+];
+/* Formulas (O Level 7081 list + common A Level 9609 tools) */
+const FORMULAS=[
+ ["Total cost","fixed costs + variable costs","4.4"],
+ ["Average cost per unit","total cost ÷ output","4.4"],
+ ["Revenue","price × quantity sold","5.3"],
+ ["Profit","revenue − total costs","5.3"],
+ ["Contribution per unit","selling price − variable cost per unit","4.4"],
+ ["Break-even output","fixed costs ÷ contribution per unit","4.4"],
+ ["Margin of safety","actual sales − break-even sales","4.4"],
+ ["Gross profit margin","(gross profit ÷ revenue) × 100","5.5"],
+ ["Profit margin","(profit ÷ revenue) × 100","5.5"],
+ ["Return on capital employed (ROCE)","(profit ÷ capital employed) × 100","5.5"],
+ ["Current ratio","current assets ÷ current liabilities","5.5"],
+ ["Acid test ratio","(current assets − inventory) ÷ current liabilities","5.5"],
+ ["Labour productivity","output ÷ number of workers","4.1"],
+ ["Market share","(business sales ÷ total market sales) × 100","3.1"],
+ ["Capacity utilisation","(current output ÷ maximum output) × 100","A Level 4.3"],
+ ["Labour turnover","(employees leaving ÷ average employees) × 100","A Level 2.1"],
+ ["Price elasticity of demand","% change in quantity demanded ÷ % change in price","A Level 8.1"],
+ ["Gearing","(non-current liabilities ÷ capital employed) × 100","A Level 10.2"],
+ ["Payback period","years until cumulative net cash flow reaches zero","A Level 10.3"],
+ ["Average rate of return","(average annual profit ÷ initial investment) × 100","A Level 10.3"]
+];
+const PAGES=[["Home","index.html","home"],["Courses","courses.html","courses"],["Syllabus","syllabus.html","syllabus"],["Past papers","past-papers.html","papers"],["Business Lab","lab.html","lab"],["Notes store","notes.html","notes"],["About Sir Sohail","about.html","about"],["Enrol & contact","contact.html","contact"]];
+window.BIZ={$,$$,store,sess,esc,wa,SYL,DEPT,DNAME,deptOf,PMETA,AO,PRODUCTS,DEFS,FORMULAS,RM,FINE,WA_DISPLAY,IG};
+const money=n=>"Rs. "+Number(n).toLocaleString("en-PK");
+BIZ.money=money;
+
+/* ======================= SOUND ======================= */
+const Snd=(function(){
+  let ctx=null,on=store.get("biz-snd",true),last=0,master=null;
+  function ac(){ if(!ctx){ try{ctx=new (window.AudioContext||window.webkitAudioContext)(); master=ctx.createGain(); master.gain.value=.55; master.connect(ctx.destination);}catch(e){return null} } if(ctx.state==="suspended") ctx.resume(); return ctx; }
+  function tone(f,d,type,v,slide,delay){ if(!on) return; const c=ac(); if(!c||c.state!=="running") return; const t=c.currentTime+(delay||0),o=c.createOscillator(),g=c.createGain(); o.type=type||"sine"; o.frequency.setValueAtTime(f,t); if(slide) o.frequency.exponentialRampToValueAtTime(Math.max(30,f*slide),t+d); g.gain.setValueAtTime(0,t); g.gain.linearRampToValueAtTime(v||.04,t+.01); g.gain.exponentialRampToValueAtTime(.0001,t+d); o.connect(g).connect(master); o.start(t); o.stop(t+d+.03); }
+  function noise(d,v,hp){ if(!on) return; const c=ac(); if(!c||c.state!=="running") return; const b=c.createBuffer(1,c.sampleRate*d,c.sampleRate),a=b.getChannelData(0); for(let i=0;i<a.length;i++) a[i]=(Math.random()*2-1)*(1-i/a.length); const s=c.createBufferSource(); s.buffer=b; const f=c.createBiquadFilter(); f.type="bandpass"; f.frequency.value=hp||1800; const g=c.createGain(); g.gain.value=v||.04; s.connect(f).connect(g).connect(master); s.start(); }
+  ["pointerdown","keydown"].forEach(ev=>addEventListener(ev,()=>ac(),{once:true,passive:true}));
+  return { get on(){return on}, set(v){on=v;store.set("biz-snd",v);if(v){ac();setTimeout(()=>this.chime(),30)}},
+    tick(){const n=performance.now(); if(n-last<60) return; last=n; tone(2400,.025,"square",.008)},
+    click(){tone(560,.07,"triangle",.045,1.5)},
+    soft(){tone(820,.05,"sine",.03)},
+    whoosh(){noise(.28,.05,900);tone(220,.3,"sine",.02,2.6)},
+    open(){tone(440,.09,"sine",.035,1.5);tone(660,.12,"sine",.03,1.3,.06)},
+    close(){tone(660,.09,"sine",.03,.66)},
+    step(v){tone(260+v*10,.08,"sine",.04)},
+    swap(){tone(380,.12,"sawtooth",.02,1.6)},
+    type(){tone(1800+Math.random()*600,.02,"square",.006)},
+    plop(){tone(320,.14,"sine",.06,2.2)},
+    chime(){[660,880,1320].forEach((f,i)=>tone(f,.25,"sine",.035,1,i*.09))},
+    alarm(){[0,.22,.44].forEach(d=>tone(990,.16,"square",.03,1,d))},
+    err(){tone(170,.2,"square",.025,.7)} };
+})();
+BIZ.Snd=Snd;
+document.addEventListener("pointerover",e=>{ if(FINE && e.target.closest("a,button,.tile,.card-h")) Snd.tick(); },{passive:true});
+document.addEventListener("click",e=>{ const t=e.target.closest("a,button"); if(!t) return; if(t.matches("[data-nosnd]")) return; t.closest(".nav-links,.mmenu,.foot")?Snd.soft():Snd.click(); },true);
+
+/* ======================= TOAST ======================= */
+let tT; function toast(m){ const el=$("#toast"); if(!el) return; el.textContent=m; el.classList.add("on"); clearTimeout(tT); tT=setTimeout(()=>el.classList.remove("on"),2000); }
+BIZ.toast=toast;
+
+/* ======================= THEME ======================= */
+const root=document.documentElement;
+const sv=store.get("biz-theme",null); if(sv) root.setAttribute("data-theme",sv);
+const isDark=()=>{ const t=root.getAttribute("data-theme"); return t? t==="dark" : !matchMedia("(prefers-color-scheme: light)").matches; };
+function paintTheme(){ const m=$('meta[name="theme-color"]'); if(m) m.content=isDark()?"#0f1714":"#faf7ee"; $$("[data-theme-icon]").forEach(i=>i.innerHTML=isDark()?'<path d="M21 12.8A9 9 0 1111.2 3a7 7 0 009.8 9.8z"/>':'<circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/>'); window.dispatchEvent(new Event("site-theme")); }
+function toggleTheme(){ const n=isDark()?"light":"dark"; root.setAttribute("data-theme",n); store.set("biz-theme",n); paintTheme(); Snd.whoosh(); }
+BIZ.toggleTheme=toggleTheme;
+paintTheme();
+matchMedia("(prefers-color-scheme: light)").addEventListener("change",paintTheme);
+
+/* sound button */
+function paintSnd(){ $$("[data-snd]").forEach(b=>{ b.setAttribute("aria-pressed",String(Snd.on)); b.innerHTML=Snd.on?'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M11 5L6 9H3v6h3l5 4zM16 9a4 4 0 010 6M19 6a8 8 0 010 12"/></svg>':'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M11 5L6 9H3v6h3l5 4zM22 9l-6 6M16 9l6 6"/></svg>'; }); }
+function toggleSnd(){ Snd.set(!Snd.on); paintSnd(); toast(Snd.on?"Sound on":"Sound off"); }
+BIZ.toggleSnd=toggleSnd;
+$$("[data-snd]").forEach(b=>b.addEventListener("click",toggleSnd)); paintSnd();
+$$("[data-theme-btn]").forEach(b=>b.addEventListener("click",toggleTheme));
+
+/* ======================= SMOOTH SCROLL + GSAP ======================= */
+const G=window.gsap, ST=window.ScrollTrigger;
+if(G&&ST){ G.registerPlugin(ST); ST.config({ignoreMobileResize:true}); }
+let lenis=null;
+if(!RM && window.Lenis){ try{ lenis=new Lenis({lerp:.1,smoothWheel:true,wheelMultiplier:.95,touchMultiplier:1.4}); if(G&&ST){ lenis.on("scroll",ST.update); G.ticker.add(t=>lenis.raf(t*1000)); G.ticker.lagSmoothing(0);} else { (function r(t){lenis.raf(t);requestAnimationFrame(r)})(performance.now()); } }catch(e){lenis=null} }
+BIZ.lenis=lenis;
+BIZ.lock=v=>{ if(lenis) v?lenis.stop():lenis.start(); document.documentElement.style.overflow=v?"hidden":""; };
+BIZ.go=sel=>{ const el=typeof sel==="string"?document.querySelector(sel):sel; if(!el) return; if(lenis) lenis.scrollTo(el,{offset:-90,duration:1.2}); else el.scrollIntoView({behavior:RM?"auto":"smooth"}); };
+document.addEventListener("click",e=>{ const a=e.target.closest('a[href^="#"]'); if(!a) return; const h=a.getAttribute("href"); if(h.length>1 && document.querySelector(h)){ e.preventDefault(); BIZ.go(h); history.replaceState(null,"",h);} });
+
+/* ======================= 3D BACKGROUND (Three.js · market floor + candlestick strip) ======================= */
+BIZ.initBg=function(){
+  const host=$("#bg3d"); if(!host||host.dataset.on) return; host.dataset.on=1;
+  const T=window.THREE; let ok=false;
+  try{ const c=document.createElement("canvas"); ok=!!(T && (c.getContext("webgl")||c.getContext("experimental-webgl"))); }catch(e){}
+  if(!ok){ root.classList.add("no-webgl"); return; }
+  const small=innerWidth<760, dpr=Math.min(small?1.5:1.75,devicePixelRatio||1);
+  const renderer=new T.WebGLRenderer({antialias:!small,alpha:true,powerPreference:"high-performance"});
+  renderer.setPixelRatio(dpr); renderer.setSize(innerWidth,innerHeight); host.appendChild(renderer.domElement);
+  const scene=new T.Scene(), cam=new T.PerspectiveCamera(46,innerWidth/innerHeight,.1,240); cam.position.set(0,1.4,24);
+  /* resolve theme tokens (oklch) to RGB through a 1px canvas, which understands any CSS colour */
+  const px=document.createElement("canvas"); px.width=px.height=1; const pc=px.getContext("2d",{willReadFrequently:true});
+  const read=()=>{ const cs=getComputedStyle(root);
+    const g=v=>{ pc.clearRect(0,0,1,1); pc.fillStyle="#808080"; pc.fillStyle=cs.getPropertyValue(v).trim(); pc.fillRect(0,0,1,1); const d=pc.getImageData(0,0,1,1).data; return new T.Color(d[0]/255,d[1]/255,d[2]/255); };
+    return [g("--c-ok"),g("--c-bad"),g("--c-cool"),g("--c-paper-4")]; };
+  let [cUp,cDn,cBr,cBase]=read();
+  const uni={uT:{value:0},uUp:{value:cUp},uDn:{value:cDn},uBr:{value:cBr},uBase:{value:cBase},uLight:{value:isDark()?0:1},uM:{value:new T.Vector2(0,0)},uP:{value:-10},uReveal:{value:0},uDim:{value:innerWidth<760?.5:1},uFade:{value:1},uStrip:{value:1}};
+  const HOME=PAGE==="home";
+  const box=new T.BoxGeometry(1,1,1);
+  const inst=(n,attrs)=>{ const g=new T.InstancedBufferGeometry(); g.index=box.index; g.setAttribute("position",box.attributes.position); g.setAttribute("normal",box.attributes.normal);
+    Object.entries(attrs).forEach(([k,[arr,sz]])=>g.setAttribute(k,new T.InstancedBufferAttribute(arr,sz))); g.instanceCount=n; return g; };
+
+  /* --- market floor: a grid of columns whose heights ripple like a heat map --- */
+  const COLS=small?18:30, ROWS=small?10:14, NF=COLS*ROWS, off=new Float32Array(NF*2);
+  for(let r=0;r<ROWS;r++) for(let c=0;c<COLS;c++){ const i=r*COLS+c; off[i*2]=c-(COLS-1)/2; off[i*2+1]=r; }
+  const floorMat=new T.ShaderMaterial({transparent:true,depthWrite:true,uniforms:uni,
+    vertexShader:`uniform float uT;uniform vec2 uM;uniform float uP;attribute vec2 off;varying float vH;varying vec3 vN;varying float vF;varying float vTop;
+      void main(){
+        float w=.5+.5*sin(off.x*.33+uT*.55)*cos(off.y*.41-uT*.4);
+        float w2=.5+.5*sin(off.x*.11+off.y*.19+uT*.18);
+        float h=.18+2.6*w*(.45+.55*w2);
+        vec2 d=off-uM; h+=1.8*exp(-dot(d,d)*.045);
+        float pr=length(vec2(off.x,off.y-4.));float ring=uP-pr;h+=1.6*exp(-ring*ring*.5)*step(0.,uP);
+        vec3 p=position;vTop=step(.49,p.y);p.y=(p.y+.5)*h;p.xz*=.78;p.x+=off.x*1.15;p.z+=-off.y*1.15;
+        vH=h;vN=normal;vec4 mv=modelViewMatrix*vec4(p,1.);
+        vF=smoothstep(-70.,-26.,mv.z)*smoothstep(-6.,-16.,mv.z);
+        gl_Position=projectionMatrix*mv;}`,
+    fragmentShader:`uniform vec3 uUp;uniform vec3 uBr;uniform vec3 uBase;uniform float uLight;uniform float uDim;uniform float uFade;varying float vH;varying vec3 vN;varying float vF;varying float vTop;
+      void main(){float sh=vN.y>.5?1.:(abs(vN.x)>.5?.62:.8);
+        float k=smoothstep(.9,3.6,vH);vec3 col=mix(uBase,mix(uBr,uUp,smoothstep(2.,3.8,vH)),k);
+        col*=sh;col+=vTop*k*.18;
+        float a=vF*uDim*uFade*(uLight>.5?.24:.42)*(.35+.65*sh);
+        gl_FragColor=vec4(col,a);}`});
+  const floor=new T.Mesh(inst(NF,{off:[off,2]}),floorMat); floor.frustumCulled=false; scene.add(floor);
+  floor.position.set(0,-10.2,-4);
+
+  /* --- candlestick strip: a random walk drawn as real OHLC candles + wicks --- */
+  const NC=small?26:44, ohlc=new Float32Array(NC*4), idx=new Float32Array(NC);
+  let price=0, seed=7; const rnd=()=>{ seed=(seed*16807)%2147483647; return seed/2147483647; };
+  for(let i=0;i<NC;i++){ const drift=.09+Math.sin(i*.35)*.12; const o=price, c=o+(rnd()-.42+drift*.6)*1.1; const hi=Math.max(o,c)+rnd()*.55, lo=Math.min(o,c)-rnd()*.55;
+    ohlc.set([o,c,hi,lo],i*4); idx[i]=i; price=c; }
+  const mid=price/2;
+  const candleVS=wick=>`uniform float uT;uniform float uReveal;attribute float idx;attribute vec4 ohlc;varying float vUp;varying vec3 vN;varying float vF;
+      void main(){ float NC=${NC.toFixed(1)};
+        float on=smoothstep(idx/NC-.02,idx/NC+.04,uReveal);
+        vec4 q=ohlc; float last=step(NC-1.5,idx); q.y+=last*sin(uT*1.7)*.35;
+        vUp=step(q.x,q.y);
+        float lo=${wick?"q.w":"min(q.x,q.y)"}, hi=${wick?"q.z":"max(q.x,q.y)"}; float h=max(hi-lo,.06)*on;
+        vec3 p=position; p.x*=${wick?".07":".56"}; p.z*=${wick?".07":".56"}; p.y=p.y*h+lo+h*.5+(1.-on)*(-.6);
+        p.x+=idx*.82; p.y-=${mid.toFixed(3)};
+        vN=normal; vec4 mv=modelViewMatrix*vec4(p,1.); vF=on; gl_Position=projectionMatrix*mv;}`;
+  const candleFS=`uniform vec3 uUp;uniform vec3 uDn;uniform float uLight;uniform float uDim;uniform float uStrip;varying float vUp;varying vec3 vN;varying float vF;
+      void main(){ float sh=vN.z>.5?1.:(abs(vN.x)>.5?.7:.85); vec3 col=mix(uDn,uUp,vUp)*sh;
+        gl_FragColor=vec4(col,uStrip*vF*(uDim<1.?.4:1.)*(uLight>.5?.8:.92));}`;
+  const cGeo=()=>inst(NC,{idx:[idx,1],ohlc:[ohlc,4]});
+  const bodies=new T.Mesh(cGeo(),new T.ShaderMaterial({transparent:true,uniforms:uni,vertexShader:candleVS(false),fragmentShader:candleFS}));
+  const wicks=new T.Mesh(cGeo(),new T.ShaderMaterial({transparent:true,uniforms:uni,vertexShader:candleVS(true),fragmentShader:candleFS}));
+  bodies.frustumCulled=wicks.frustumCulled=false;
+  const strip=new T.Group(); strip.add(wicks,bodies); scene.add(strip);
+  const blend=()=>{ const b=isDark()?T.AdditiveBlending:T.NormalBlending; floorMat.blending=T.NormalBlending; floorMat.needsUpdate=true; };
+  blend();
+
+  function layout(){ const w=innerWidth; cam.aspect=w/innerHeight; cam.updateProjectionMatrix(); renderer.setSize(w,innerHeight);
+    const sc=w>900?.42:w>600?.34:.3; strip.scale.setScalar(sc);
+    strip.position.set(w>900?3.2:-NC*.82*sc/2,w>900?1.2:-5.2,w>900?-2:-8); uni.uDim.value=w<760?.5:1; strip.rotation.set(-.05,w>900?-.32:-.12,.02); }
+  layout();
+  let mx=0,my=0,tx=0,ty=0,sy=0,vis=true,t0=performance.now(),pulseT=-99;
+  addEventListener("pointermove",e=>{ tx=e.clientX/innerWidth*2-1; ty=e.clientY/innerHeight*2-1; },{passive:true});
+  addEventListener("scroll",()=>{ sy=scrollY; },{passive:true});
+  addEventListener("resize",layout);
+  addEventListener("site-theme",()=>{ [cUp,cDn,cBr,cBase]=read(); uni.uUp.value=cUp; uni.uDn.value=cDn; uni.uBr.value=cBr; uni.uBase.value=cBase; uni.uLight.value=isDark()?0:1; blend(); });
+  document.addEventListener("visibilitychange",()=>{ vis=!document.hidden; });
+  BIZ.pulse=()=>{ pulseT=performance.now(); };
+  function frame(now){
+    const t=(now-t0)/1000; uni.uT.value=RM?4:t;
+    uni.uReveal.value=RM?1.1:Math.min(1.1,Math.max(0,(t-.35)*.55));
+    mx+=(tx-mx)*.045; my+=(ty-my)*.045;
+    const h=Math.max(1,document.documentElement.scrollHeight-innerHeight), sp=sy/h;
+    uni.uM.value.set(mx*COLS*.5, (1-(my*.5+.5))*ROWS*.9);
+    const pe=(now-pulseT)/1000; uni.uP.value=pe<4? pe*9 : -10;
+    strip.rotation.y=(innerWidth>900?-.32:-.12)+mx*.12; strip.position.y=(innerWidth>900?1.2:-5.2)+sp*7-my*.25;
+    floor.position.z=-4+sp*10; floor.position.y=-10.2-Math.min(1,sy/innerHeight)*2.2; uni.uFade.value=(HOME?1:.6)-(HOME?.55:.25)*Math.min(1,sy/(innerHeight*.9)); const sv=HOME?Math.max(0,1-Math.max(0,sy-innerHeight*.25)/(innerHeight*.45)):0; uni.uStrip.value=sv; strip.visible=sv>.01; floor.rotation.y=mx*.05;
+    cam.position.x=mx*1.1; cam.position.y=1.4-my*.6; cam.lookAt(0,-1.5,-6);
+    renderer.render(scene,cam);
+    if(!host.classList.contains("on")) requestAnimationFrame(()=>host.classList.add("on"));
+    if(!RM && vis) requestAnimationFrame(frame); else if(!RM) setTimeout(()=>requestAnimationFrame(frame),400);
+  }
+  requestAnimationFrame(frame);
+  setInterval(()=>{ if(!document.hidden) BIZ.pulse(); },11000);
+};
+if(window.THREE) BIZ.initBg();
+
+/* ======================= KINETIC TEXT (variable weight follows cursor) ======================= */
+function splitKin(el){
+  const txt=el.textContent; el.setAttribute("aria-label",txt.replace(/\s+/g," ").trim()); el.innerHTML="";
+  const frag=document.createDocumentFragment();
+  txt.split(/(\s+)/).forEach(w=>{ if(!w) return; if(/^\s+$/.test(w)){ frag.appendChild(document.createTextNode(" ")); return; }
+    const ws=document.createElement("span"); ws.style.whiteSpace="nowrap"; ws.setAttribute("aria-hidden","true");
+    [...w].forEach(c=>{ const s=document.createElement("span"); s.className="ch"; s.textContent=c; ws.appendChild(s); }); frag.appendChild(ws); });
+  el.appendChild(frag); el.classList.add("kin");
+}
+$$("[data-kin]").forEach(el=>{
+  el.style.setProperty("--w",parseInt(getComputedStyle(el).fontWeight,10)||700);
+  $$(":scope > span[data-kpart]",el).length? $$(":scope > span[data-kpart]",el).forEach(splitKin) : splitKin(el);
+  if(!FINE||RM) return;
+  const chs=$$(".ch",el); let raf=0,px=-1e4,py=-1e4;
+  const low=parseInt(getComputedStyle(el).fontWeight,10)||700, peak=Math.min(800,low+180);
+  function paint(){ raf=0; chs.forEach(c=>{ const r=c.getBoundingClientRect(), d=Math.hypot(px-(r.left+r.width/2),py-(r.top+r.height/2)), f=Math.max(0,1-d/220);
+    c.style.setProperty("--w",Math.round(low+(peak-low)*f)); c.style.transform=f>0?"translateY("+(-f*6).toFixed(1)+"px)":""; }); }
+  el.addEventListener("pointermove",e=>{ px=e.clientX; py=e.clientY; if(!raf) raf=requestAnimationFrame(paint); });
+  el.addEventListener("pointerleave",()=>{ px=py=-1e4; if(!raf) raf=requestAnimationFrame(paint); });
+});
+
+/* ======================= SCRAMBLE (code glyph decode) ======================= */
+const GLYPHS="01{}<>/=;:+*#$%&[]";
+function scramble(el){ if(el._scr) return; const orig=el.dataset.text||el.textContent; el.dataset.text=orig; let f=0; const len=orig.length, total=Math.min(18,6+len);
+  el._scr=true; (function run(){ let out=""; for(let i=0;i<len;i++){ const c=orig[i]; if(c===" "){out+=" ";continue} out+= i < (f/total)*len ? c : GLYPHS[(Math.random()*GLYPHS.length)|0]; } el.textContent=out; f++; if(f<=total) requestAnimationFrame(run); else { el.textContent=orig; el._scr=false; } })(); Snd.type(); }
+BIZ.scramble=scramble;
+
+
+/* ======================= MAGNETIC + SPOTLIGHT + TILT ======================= */
+if(FINE && !RM){
+  document.addEventListener("pointermove",e=>{
+    const m=e.target.closest(".mag"); if(m){ const r=m.getBoundingClientRect(); m.style.transform="translate("+((e.clientX-r.left-r.width/2)*.22).toFixed(1)+"px,"+((e.clientY-r.top-r.height/2)*.3).toFixed(1)+"px)"; }
+    const s=e.target.closest(".spot"); if(s){ const r=s.getBoundingClientRect(); s.style.setProperty("--mx",(e.clientX-r.left)+"px"); s.style.setProperty("--my",(e.clientY-r.top)+"px"); }
+    const t=e.target.closest("[data-tilt]"); if(t){ const r=t.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5,a=+(t.dataset.tilt||8); t.style.transform="perspective(900px) rotateY("+(x*a).toFixed(2)+"deg) rotateX("+(-y*a).toFixed(2)+"deg)"; }
+  },{passive:true});
+  document.addEventListener("pointerout",e=>{ const m=e.target.closest(".mag"); if(m && !m.contains(e.relatedTarget)) m.style.transform=""; const t=e.target.closest("[data-tilt]"); if(t && !t.contains(e.relatedTarget)) t.style.transform=""; });
+}
+
+/* ======================= REVEALS ======================= */
+function reveals(){
+  const els=$$("[data-rv]"); if(RM||!els.length) return;
+  if(G&&ST){
+    els.forEach(el=>{ const r=el.getBoundingClientRect(); if(r.top<innerHeight*.92) return; const kind=el.dataset.rv;
+      const from=kind==="left"?{x:-80,opacity:0}:kind==="right"?{x:80,opacity:0}:kind==="scale"?{scale:.92,opacity:0}:kind==="clip"?{clipPath:"inset(0 0 100% 0)"}:{y:44,opacity:0};
+      el.style.transition="none"; G.from(el,{...from,duration:1,ease:"expo.out",delay:+(el.dataset.rvDelay||0),clearProps:"transform,opacity,clipPath",onComplete:()=>{ el.style.transition=""; },scrollTrigger:{trigger:el,start:"top 90%",once:true}}); });
+    $$("[data-rv-stagger]").forEach(g=>{ const r=g.getBoundingClientRect(); if(r.top<innerHeight*.92) return; const kids=[...g.children];
+      kids.forEach(k=>k.style.transition="none");
+      G.from(kids,{y:50,opacity:0,rotateX:-8,transformOrigin:"50% 0",duration:.9,ease:"expo.out",stagger:.07,clearProps:"transform,opacity,transformOrigin",onComplete:()=>kids.forEach(k=>{ k.style.transition=""; }),scrollTrigger:{trigger:g,start:"top 88%",once:true}}); });
+  } else if("IntersectionObserver" in window){
+    const io=new IntersectionObserver(es=>es.forEach(e=>{ if(e.isIntersecting){ e.target.style.transition="opacity .9s var(--e-out),transform .9s var(--e-out)"; e.target.style.opacity=""; e.target.style.transform=""; io.unobserve(e.target);} }),{rootMargin:"0px 0px -8% 0px"});
+    els.forEach(el=>{ if(el.getBoundingClientRect().top>innerHeight){ el.style.opacity="0"; el.style.transform="translateY(40px)"; io.observe(el);} });
+  }
+}
+
+/* overflow rails: pinned horizontal scroll on desktop, native swipe on touch */
+function rails(){
+  $$("[data-rail]").forEach(sec=>{
+    const track=$("[data-rail-track]",sec); if(!track) return;
+    if(G&&ST&&!RM&&innerWidth>900){
+      const dist=()=>Math.max(0,track.scrollWidth-sec.querySelector(".rail-view").clientWidth+40);
+      G.to(track,{x:()=>-dist(),ease:"none",scrollTrigger:{trigger:sec,start:"top top",end:()=>"+="+dist(),pin:true,scrub:.8,invalidateOnRefresh:true,
+        onUpdate:s=>{ const bar=$("[data-rail-bar]",sec); if(bar) bar.style.transform="scaleX("+s.progress.toFixed(3)+")"; }}});
+      $$(".rail-card",track).forEach((c,i)=>{ G.fromTo(c,{rotate:i%2?2:-2,y:30},{rotate:0,y:0,ease:"none",scrollTrigger:{trigger:sec,start:"top bottom",end:"top top",scrub:true}}); });
+    } else { sec.classList.add("rail-native"); }
+  });
+}
+
+/* ======================= BREAK-EVEN CHART (shared by home + Business Lab) ======================= */
+function niceMax(v){ if(v<=0) return 10; const p=Math.pow(10,Math.floor(Math.log10(v))), f=v/p; return (f<=1?1:f<=2?2:f<=2.5?2.5:f<=5?5:10)*p; }
+const short=n=>{ const a=Math.abs(n); return a>=1e6?(n/1e6).toFixed(a>=1e7?0:1).replace(/\.0$/,"")+"m":a>=1e3?(n/1e3).toFixed(a>=1e4?0:1).replace(/\.0$/,"")+"k":String(Math.round(n)); };
+BIZ.beCalc=function(o){ const c=o.p-o.vc; const be=c>0?o.fc/c:Infinity; const q=o.q||0;
+  return {c,be,beRev:be*o.p,mos:q-Math.ceil(be),profit:q*o.p-(o.fc+o.vc*q),ok:c>0}; };
+BIZ.beSVG=function(o,opt){ opt=opt||{}; const cp=opt.compact===undefined?innerWidth<600:opt.compact; const W=cp?400:640,H=cp?360:400,l=cp?48:64,r=cp?14:24,t=cp?40:24,b=cp?44:48, iw=W-l-r, ih=H-t-b, NT=cp?4:5;
+  const R=BIZ.beCalc(o), xmax=niceMax(Math.max(R.ok?R.be*1.8:10,(o.q||0)*1.15,10)), ymax=niceMax(Math.max(o.p*xmax,o.fc+o.vc*xmax));
+  const X=x=>l+x/xmax*iw, Y=y=>t+ih-y/ymax*ih;
+  let g=""; for(let i=0;i<=NT;i++){ const yv=ymax*i/NT, xv=xmax*i/NT; g+='<line class="be-grid" x1="'+l+'" x2="'+(W-r)+'" y1="'+Y(yv)+'" y2="'+Y(yv)+'"/><text class="be-ty" x="'+(l-10)+'" y="'+(Y(yv)+4)+'">'+short(yv)+'</text><text class="be-tx" x="'+X(xv)+'" y="'+(H-b+20)+'">'+short(xv)+"</text>"; }
+  const tc='<line class="be-tc" x1="'+X(0)+'" y1="'+Y(o.fc)+'" x2="'+X(xmax)+'" y2="'+Y(o.fc+o.vc*xmax)+'" pathLength="1"/>';
+  const tr='<line class="be-tr" x1="'+X(0)+'" y1="'+Y(0)+'" x2="'+X(xmax)+'" y2="'+Y(o.p*xmax)+'" pathLength="1"/>';
+  const fc='<line class="be-fc" x1="'+X(0)+'" y1="'+Y(o.fc)+'" x2="'+X(xmax)+'" y2="'+Y(o.fc)+'"/>';
+  let zones="", pt="", mos="";
+  if(R.ok&&R.be<xmax){ const bx=X(R.be), by=Y(R.beRev);
+    zones='<path class="be-loss" d="M'+X(0)+" "+Y(0)+" L"+bx+" "+by+" L"+X(0)+" "+Y(o.fc)+'Z"/><path class="be-profit" d="M'+bx+" "+by+" L"+X(xmax)+" "+Y(o.p*xmax)+" L"+X(xmax)+" "+Y(o.fc+o.vc*xmax)+'Z"/>';
+    pt='<line class="be-drop" x1="'+bx+'" x2="'+bx+'" y1="'+by+'" y2="'+(t+ih)+'"/><circle class="be-pt" cx="'+bx+'" cy="'+by+'" r="7"/><circle class="be-ring" cx="'+bx+'" cy="'+by+'" r="7"/>'
+      +'<g class="be-lab" transform="translate('+Math.min(bx+12,W-r-142)+","+Math.max(by-46,t+4)+')"><rect width="138" height="36" rx="8"/><text x="10" y="15">Break-even</text><text class="v" x="10" y="29">'+Math.ceil(R.be).toLocaleString("en-PK")+" units</text></g>";
+    if(o.q&&o.q>R.be&&o.q<=xmax){ const qx=X(o.q), my=t+ih-14; mos='<line class="be-q" x1="'+qx+'" x2="'+qx+'" y1="'+t+'" y2="'+(t+ih)+'"/><path class="be-mos" d="M'+(bx+2)+" "+my+" H"+(qx-2)+'"/><text class="be-mt" x="'+((bx+qx)/2)+'" y="'+(my-8)+'">margin of safety '+Math.max(0,R.mos).toLocaleString("en-PK")+"</text>"; }
+  }
+  const leg=opt.legend===false?"":'<g class="be-leg" transform="translate('+(cp?l-30:l+12)+","+(cp?14:t+10)+')"><line class="be-tr" x1="0" x2="18" y1="0" y2="0"/><text x="24" y="4">Revenue</text><line class="be-tc" x1="92" x2="110" y1="0" y2="0"/><text x="116" y="4">Total cost</text><line class="be-fc" x1="196" x2="214" y1="0" y2="0"/><text x="220" y="4">Fixed cost</text></g>';
+  return '<svg class="be-svg" viewBox="0 0 '+W+" "+H+'" role="img" aria-label="Break-even chart">'+g+zones+fc+tc+tr+mos+pt+leg
+    +'<text class="be-ax" x="'+(W-r)+'" y="'+(H-8)+'" text-anchor="end">Output (units)</text>'+(cp?"":'<text class="be-ax" x="14" y="'+(t+4)+'" text-anchor="start">Rs</text>')+"</svg>"; };
+
+/* ======================= NAV ======================= */
+(function(){
+  const nav=$(".nav"); if(!nav) return;
+  $$(".nav-links a,.mmenu a").forEach(a=>{ if(a.dataset.p===PAGE) a.setAttribute("aria-current","page"); });
+  const links=$(".nav-links"), blob=$(".nav-blob");
+  function moveBlob(a){ if(!blob||!a){ if(blob) blob.style.opacity="0"; return;} blob.style.opacity="1"; blob.style.width=a.offsetWidth+"px"; blob.style.transform="translateX("+a.offsetLeft+"px)"; }
+  const cur=$(".nav-links a[aria-current]"); if(cur) requestAnimationFrame(()=>moveBlob(cur));
+  links&&links.addEventListener("pointerover",e=>{ const a=e.target.closest("a"); if(a) moveBlob(a); });
+  links&&links.addEventListener("pointerleave",()=>moveBlob($(".nav-links a[aria-current]")));
+  let last=0; addEventListener("scroll",()=>{ const y=scrollY, d=y-last; if(Math.abs(d)<6) return; nav.classList.toggle("tuck", d>0 && y>520 && !$(".mmenu.open")); last=y; },{passive:true});
+  const burger=$(".burger"), mm=$(".mmenu");
+  function setMM(v){ mm.classList.toggle("open",v); burger.setAttribute("aria-expanded",String(v)); $$("a",mm).forEach((a,i)=>a.style.transitionDelay=v?(i*.03)+"s":"0s"); v?Snd.open():Snd.close(); }
+  burger&&burger.addEventListener("click",e=>{ e.stopPropagation(); setMM(!mm.classList.contains("open")); });
+  document.addEventListener("click",e=>{ if(mm&&mm.classList.contains("open")&&!e.target.closest(".mmenu,.burger")) setMM(false); });
+  addEventListener("keydown",e=>{ if(e.key==="Escape"&&mm&&mm.classList.contains("open")) setMM(false); });
+  // page-leave sound + pulse
+  document.addEventListener("click",e=>{ const a=e.target.closest("a[href$='.html']"); if(a&&!a.target){ Snd.whoosh(); } });
+})();
+
+/* ======================= MODAL ======================= */
+let lastFocus=null;
+BIZ.modal=function(html,cls){ const m=$("#modal"); lastFocus=document.activeElement; $("#modalBody").innerHTML=html; m.className="modal open "+(cls||""); m.setAttribute("aria-hidden","false"); BIZ.lock(true); Snd.open(); setTimeout(()=>$(".x",m).focus({preventScroll:true}),60); };
+BIZ.closeModal=function(){ const m=$("#modal"); if(!m.classList.contains("open")) return; m.classList.remove("open"); m.setAttribute("aria-hidden","true"); BIZ.lock(false); Snd.close(); lastFocus&&lastFocus.focus&&lastFocus.focus({preventScroll:true}); };
+document.addEventListener("click",e=>{ if(e.target.closest("[data-close]")) BIZ.closeModal(); });
+
+/* ======================= ⌘K PALETTE ======================= */
+(function(){
+  const box=$("#cmdk"); if(!box) return; const inp=$("#cmdkIn"), list=$("#cmdkList"); let items=[],idx=0;
+  const ACTS=[
+    {g:"Actions",t:"Switch light / dark theme",k:"theme",i:"◐",run:()=>toggleTheme()},
+    {g:"Actions",t:"Turn sound on / off",k:"sound audio",i:"♪",run:()=>toggleSnd()},
+    {g:"Actions",t:"Ask Biz bot",k:"chat bot help define formula",i:"?",run:()=>BIZ.bot&&BIZ.bot.open()},
+    {g:"Actions",t:"Open my cart",k:"cart notes buy",i:"₨",run:()=>BIZ.cart&&BIZ.cart.open()},
+    {g:"Actions",t:"Start a timed 7115 Paper 2 (case study)",k:"timer exam o level 7115 paper 2 case study",i:"⏱",href:"past-papers.html#t-7115-2"},
+    {g:"Actions",t:"Start a timed 9609 Paper 3",k:"timer exam a level 9609 paper 3 decision making",i:"⏱",href:"past-papers.html#t-9609-3"},
+    {g:"Actions",t:"Draw a break-even chart",k:"break even chart calculator lab contribution",i:"⟋",href:"lab.html#be"},
+    {g:"Actions",t:"Analyse ratios",k:"ratio roce current acid test margin calculator",i:"%",href:"lab.html#ratios"},
+    {g:"Actions",t:"Drill key terms",k:"definitions flashcards key terms",i:"Aa",href:"lab.html#terms"},
+    {g:"Actions",t:"Message Sir Sohail on WhatsApp",k:"whatsapp contact",i:"✆",href:wa("Assalam o Alaikum Sir, I'd like to ask about your Business classes."),ext:1}
+  ];
+  const PG=PAGES.map(([t,h,p])=>({g:"Pages",t,k:t+" "+p,i:"↗",href:h}));
+  const TP=[]; ["ol","al"].forEach(key=>{ const d=SYL[key]; d.topics.forEach(tp=>TP.push({g:"Syllabus",t:tp.n+" "+tp.t,sub:d.short,k:tp.t+" "+d.short+" "+(key==="ol"?"o level igcse 7115 0450 0264":"a level as")+" "+tp.k.join(" "),i:tp.n,href:"syllabus.html#"+key+"-"+tp.n})); });
+  const DF=DEFS.map(d=>({g:"Key terms",t:d[0],sub:"topic "+d[2],k:"define "+d[0]+" "+d[1],i:"Aa",run:()=>{ BIZ.bot.open(); setTimeout(()=>BIZ.bot.ask("define "+d[0].toLowerCase()),250); }}));
+  const FM=FORMULAS.map(f=>({g:"Formulas",t:f[0],sub:f[1],k:"formula "+f[0]+" "+f[1],i:"ƒ",run:()=>{ BIZ.bot.open(); setTimeout(()=>BIZ.bot.ask(f[0]+" formula"),250); }}));
+  const ALL=[...PG,...ACTS,...TP,...DF,...FM];
+  function score(it,q){ if(!q) return it.g==="Syllabus"?0:1; const hay=(it.t+" "+it.k).toLowerCase(); let s=0; for(const w of q.split(/\s+/)){ if(!w) continue; if(hay.includes(w)) s+=w.length+2; else return 0; } return s; }
+  function render(){ const q=inp.value.trim().toLowerCase(); items=ALL.map(i=>[i,score(i,q)]).filter(x=>x[1]>0).sort((a,b)=>b[1]-a[1]).slice(0,30).map(x=>x[0]); if(idx>=items.length) idx=0;
+    let g="",h=""; items.forEach((it,i)=>{ if(it.g!==g){ g=it.g; h+='<div class="cmdk-g">'+g+"</div>"; } h+='<'+(it.href?'a href="'+esc(it.href)+'"'+(it.ext?' target="_blank" rel="noopener"':""):'button type="button"')+' class="cmdk-i'+(i===idx?" on":"")+'" data-i="'+i+'"><span class="ic">'+esc(it.i)+"</span>"+esc(it.t)+(it.sub?"<small>"+esc(it.sub)+"</small>":"")+"</"+(it.href?"a":"button")+">"; });
+    list.innerHTML=h||'<div class="cmdk-g">No match. Try “break-even”, “paper 2” or “notes”.</div>'; }
+  function open(){ box.classList.add("open"); inp.value=""; idx=0; render(); BIZ.lock(true); Snd.open(); setTimeout(()=>inp.focus(),30); }
+  function close(){ box.classList.remove("open"); BIZ.lock(false); }
+  BIZ.cmdk={open,close};
+  function run(i){ const it=items[i]; if(!it) return; close(); if(it.run) it.run(); else if(it.ext) window.open(it.href,"_blank","noopener"); else location.href=it.href; }
+  inp.addEventListener("input",()=>{ idx=0; render(); Snd.type(); });
+  inp.addEventListener("keydown",e=>{ if(e.key==="ArrowDown"){e.preventDefault();idx=Math.min(items.length-1,idx+1);render();$(".cmdk-i.on",list)?.scrollIntoView({block:"nearest"});}
+    else if(e.key==="ArrowUp"){e.preventDefault();idx=Math.max(0,idx-1);render();$(".cmdk-i.on",list)?.scrollIntoView({block:"nearest"});}
+    else if(e.key==="Enter"){e.preventDefault();run(idx);} });
+  list.addEventListener("click",e=>{ const b=e.target.closest(".cmdk-i"); if(!b) return; const it=items[+b.dataset.i]; if(it&&it.run){ e.preventDefault(); run(+b.dataset.i);} else close(); });
+  box.addEventListener("click",e=>{ if(e.target.classList.contains("scrim")) close(); });
+  addEventListener("keydown",e=>{ const typing=/input|textarea|select/i.test(document.activeElement.tagName);
+    if((e.key==="k"&&(e.metaKey||e.ctrlKey))||(e.key==="/"&&!typing)){ e.preventDefault(); box.classList.contains("open")?close():open(); }
+    else if(e.key==="Escape"){ if(box.classList.contains("open")) close(); else BIZ.closeModal(); } });
+  $$("[data-cmdk]").forEach(b=>b.addEventListener("click",open));
+})();
+
+/* ======================= CART ======================= */
+(function(){
+  const el=$("#cart"); if(!el) return;
+  let items=store.get("biz-cart",[]);
+  const byId=id=>PRODUCTS.find(p=>p.id===id);
+  function save(){ store.set("biz-cart",items); badge(); }
+  function badge(){ const n=items.reduce((a,b)=>a+b.q,0); $$("[data-cart-n]").forEach(b=>{ b.textContent=n||""; b.dataset.n=n; }); }
+  function total(){ return items.reduce((a,i)=>{ const p=byId(i.id); return a+(p?p[i.f]*i.q:0); },0); }
+  function render(){
+    const b=$("#cartBody");
+    if(!items.length){ b.innerHTML='<div class="cart-empty"><p>Your cart is empty.</p><p style="margin-top:12px"><a class="btn btn-sm" href="notes.html">Browse notes</a></p></div>'; $("#cartFoot").hidden=true; return; }
+    $("#cartFoot").hidden=false;
+    b.innerHTML=items.map((i,k)=>{ const p=byId(i.id); if(!p) return ""; return '<div class="ci"><div class="cv" style="--cc:'+p.cc+'">'+p.code+'</div><div><b>'+esc(p.t)+'</b><small>'+(i.f==="print"?"Printed":"PDF")+" · "+money(p[i.f])+'</small></div><div class="qty"><button type="button" data-q="-1" data-k="'+k+'" aria-label="One less">−</button><span>'+i.q+'</span><button type="button" data-q="1" data-k="'+k+'" aria-label="One more">+</button></div></div>'; }).join("");
+    $("#cartTotal").textContent=money(total());
+  }
+  function add(id,f){ f=f||"print"; const ex=items.find(i=>i.id===id&&i.f===f); ex?ex.q++:items.push({id,f,q:1}); save(); render(); Snd.plop(); const p=byId(id); toast((p?p.t:"Item")+" added to cart"); $$("[data-cart-open]").forEach(b=>{ b.animate([{transform:"scale(1)"},{transform:"scale(1.25)"},{transform:"scale(1)"}],{duration:420,easing:"cubic-bezier(.16,1,.3,1)"}); }); }
+  function open(){ render(); el.classList.add("open"); el.setAttribute("aria-hidden","false"); Snd.open(); }
+  function close(){ el.classList.remove("open"); el.setAttribute("aria-hidden","true"); Snd.close(); }
+  BIZ.cart={add,open,close,items:()=>items};
+  $("#cartBody").addEventListener("click",e=>{ const b=e.target.closest("[data-q]"); if(!b) return; const k=+b.dataset.k; items[k].q+=+b.dataset.q; if(items[k].q<=0) items.splice(k,1); save(); render(); Snd.soft(); });
+  $$("[data-cart-open]").forEach(b=>b.addEventListener("click",e=>{ e.stopPropagation(); el.classList.contains("open")?close():open(); }));
+  $("#cartX").addEventListener("click",close);
+  document.addEventListener("click",e=>{ if(el.classList.contains("open")&&!e.target.closest("#cart,[data-cart-open],[data-add]")) close(); });
+  document.addEventListener("click",e=>{ const b=e.target.closest("[data-add]"); if(!b) return; add(b.dataset.add,b.dataset.f); });
+  $("#cartFoot").addEventListener("submit",e=>{ e.preventDefault(); const nm=$("#coName"), ph=$("#coPhone"), city=$("#coCity");
+    let bad=false; [[nm,v=>v.trim().length>1],[ph,v=>v.replace(/\D/g,"").length>=10],[city,v=>v.trim().length>1]].forEach(([i,ok])=>{ const f=!ok(i.value); i.setAttribute("aria-invalid",String(f)); if(f) bad=true; });
+    if(bad){ Snd.err(); $("#coErr").textContent="Add your name, a WhatsApp number (10+ digits) and your city."; return; }
+    $("#coErr").textContent="";
+    const lines=items.map(i=>{ const p=byId(i.id); return "• "+p.t+" ("+p.code+") — "+(i.f==="print"?"Printed":"PDF")+" × "+i.q+" = "+money(p[i.f]*i.q); });
+    const msg="Assalam o Alaikum Sir, I'd like to order these Business notes:\n\n"+lines.join("\n")+"\n\nTotal: "+money(total())+"\n\nName: "+nm.value.trim()+"\nWhatsApp: "+ph.value.trim()+"\nCity: "+city.value.trim()+($("#coAddr").value.trim()?"\nAddress: "+$("#coAddr").value.trim():"")+"\nPayment: "+$("#coPay").value+"\n\nPlease confirm availability and delivery.";
+    Snd.chime(); window.open(wa(msg),"_blank","noopener"); toast("WhatsApp is opening with your order"); });
+  badge();
+})();
+
+/* ======================= CHATBOT (Biz bot) ======================= */
+(function(){
+  const box=$("#bot"), fab=$("#botFab"); if(!box) return;
+  const msgs=$("#botMsgs"), inp=$("#botIn");
+  const ctx=sess.get("biz-bot-ctx",{lvl:null}); let log=sess.get("biz-bot-log",[]);
+  const PCODE={ol:"7115",ig:"0450",al:"9609"}, LNAME={ol:"O Level Business",ig:"IGCSE Business",al:"AS & A Level Business"};
+  const norm=s=>(" "+s.toLowerCase().replace(/[^a-z0-9*\s'.×+%-]/g," ").replace(/\s+/g," ")+" ");
+  function lev(a,b){ if(Math.abs(a.length-b.length)>1) return 9; const m=[...Array(a.length+1)].map((_,i)=>[i]); for(let j=1;j<=b.length;j++) m[0][j]=j; for(let i=1;i<=a.length;i++) for(let j=1;j<=b.length;j++) m[i][j]=Math.min(m[i-1][j]+1,m[i][j-1]+1,m[i-1][j-1]+(a[i-1]===b[j-1]?0:1)); return m[a.length][b.length]; }
+  function has(q,words){ const tok=q.trim().split(" "); let s=0; for(const w of words){ if(w.includes(" ")){ if(q.includes(" "+w+" ")||q.includes(w)) s+=w.length+3; } else if(q.includes(" "+w+" ")) s+=w.length+2; else if(w.length>=5 && tok.some(t=>t.length>=4&&lev(t,w)<=1)) s+=w.length; } return s; }
+  const lvlFrom=q=>/0450|0264|igcse/.test(q)?"ig":(/9609|a ?level|a-level|\bas\b|a2|\bal\b/.test(q)?"al":(/7115|7081|o ?level|o-level|\bol\b/.test(q)?"ol":null));
+  const acts=arr=>'<div class="acts">'+arr.map(([t,h,x])=>x==="btn"?'<button type="button" '+h+">"+t+"</button>":'<a href="'+h+'"'+(x?' target="_blank" rel="noopener"':"")+">"+t+"</a>").join("")+"</div>";
+  const L=()=>ctx.lvl;
+  const fmt=n=>Math.abs(n)>=1000?Math.round(n).toLocaleString("en-PK"):(Math.round(n*100)/100).toString();
+  function dur(m){ return Math.floor(m/60)?Math.floor(m/60)+"h"+(m%60?" "+m%60+"m":""):m+"m"; }
+  const INT=[
+    {k:["hi","hello","salam","assalam","aoa","hey","salaam"],a:()=>"Wa alaikum assalam! I'm Biz bot. Ask me a key term (“define opportunity cost”), a formula (“ROCE formula”), a calculation (“break even fixed 20000 price 50 variable 30”), paper timings, or how to order notes. Which course are you on?"+acts([["O Level",'data-say="I\'m in O Level"',"btn"],["IGCSE",'data-say="I\'m doing IGCSE"',"btn"],["A Level",'data-say="I\'m in A Level 9609"',"btn"]])},
+    {k:["i'm in","im in","doing","studying","i am in","my level","i study"],a:q=>{ const l=lvlFrom(q); if(!l) return "Which one: O Level, IGCSE or A Level 9609?"; ctx.lvl=l; save(); return "Got it, <b>"+LNAME[l]+"</b>. Try “what's in paper 2”, “past papers 2024”, “define stakeholder” or “notes”."+acts([["Syllabus","syllabus.html#"+l],["Past papers","past-papers.html"],["Notes","notes.html"]]); }},
+    {k:["fees","fee","price of class","cost of class","charges","kitni","paisay"],a:()=>"Fees depend on the course, the campus and the format. Send your level and exam session on WhatsApp and you'll get this session's fee."+acts([["Ask on WhatsApp",wa("Assalam o Alaikum Sir, what are the fees for your "+(L()?LNAME[L()]:"Business")+" classes?"),1],["Enrol form","contact.html#enrol"]])},
+    {k:["timings","timing","batch","schedule","days","class time","waqt","kab"],a:()=>"Batch timings change every session and differ by campus. Message on WhatsApp with your level and campus to get this session's schedule."+acts([["Ask timings",wa("Assalam o Alaikum Sir, what are the current batch timings"+(L()?" for "+LNAME[L()]:"")+"?"),1]])},
+    {k:["where","location","address","campus","swk","credo","smaf","horizon","gulshan","institute"],a:()=>"Sir Sohail teaches at <b>SWK Gulshan</b> and <b>Credo College</b> in Karachi, and online with <b>SMAF Horizon Online Academy</b>."+acts([["Where he teaches","about.html#where"]])},
+    {k:["online","zoom","abroad","remote","outside karachi","recorded","recording","missed"],a:()=>"Yes. Online classes run through SMAF Horizon Online Academy, so students outside Karachi can join. Ask on WhatsApp for the online batch."+acts([["Enrol online","contact.html#enrol"]])},
+    {k:["workshop","seminar","crash","revision"],a:()=>"Sir Sohail runs Business workshops before the exams, including sessions at Credo College. New dates go up on Instagram first."+acts([["@bizbysohail",IG,1]])},
+    {k:["instagram","insta","facebook","youtube","social","videos","reel"],a:()=>"Follow <b>@bizbysohail</b> on Instagram and Facebook for class updates, workshops and student reviews."+acts([["Instagram",IG,1],["Facebook",FB,1]])},
+    {k:["notes","buy","book","books","material","store","shop","order"],a:q=>{ const l=lvlFrom(q)||L(); const ps=PRODUCTS.filter(p=>!l||(l==="al"?p.code==="9609":p.code!=="9609")).slice(0,4); return "From the notes store"+(l?" for <b>"+LNAME[l]+"</b>":"")+":<ul>"+ps.map(p=>"<li>"+esc(p.t)+" · "+money(p.print)+" printed / "+money(p.pdf)+" PDF</li>").join("")+"</ul>"+acts([...ps.slice(0,2).map(p=>["Add "+p.t.split(" · ")[0],'data-add="'+p.id+'" data-f="print"',"btn"]),["Open store","notes.html"]]); }},
+    {k:["cart","checkout","my order"],a:()=>"Your cart has "+(BIZ.cart?BIZ.cart.items().reduce((a,b)=>a+b.q,0):0)+" item(s)."+acts([["Open cart",'data-open-cart',"btn"]])},
+    {k:["past paper","past papers","pastpapers","papers","question paper","specimen"],a:q=>{ const l=lvlFrom(q)||L()||"ol"; const c=PCODE[l]; const y=(q.match(/20(1\d|2\d)/)||[])[0]; return "Past papers for <b>"+c+"</b>"+(y?" "+y:"")+" open with their mark schemes, examiner reports and grade thresholds, and the tracker logs every score."+acts([["Open "+c+(y?" "+y:""),"past-papers.html#p-"+c+(y?"-"+y:"")]]); }},
+    {k:["mark scheme","marking scheme","ms","answers","examiner report","er"],a:()=>"Every question paper sits beside its mark scheme (MS). Each session also has the examiner report (ER) and grade thresholds (GT). Read the ER: it says exactly where marks were lost."+acts([["Past papers","past-papers.html"]])},
+    {k:["timer","time myself","timed","stopwatch","countdown"],a:q=>{ const l=lvlFrom(q)||L()||"ol"; const c=PCODE[l]; const p=(q.match(/paper\s*([1-4])|\bp([1-4])\b/)||[]).slice(1).find(Boolean)||"2"; const pm=PMETA[c].papers[p]||PMETA[c].papers[1]; return "A timed "+c+" Paper "+p+" runs <b>"+dur(pm.min)+"</b>."+acts([["Start "+c+" P"+p+" timer","past-papers.html#t-"+c+"-"+p]]); }},
+    {k:["duration","how long","marks","weight","weighting","paper 1","paper 2","paper 3","paper 4","p1","p2","p3","p4","case study paper","data response"],a:q=>{ const l=lvlFrom(q)||L()||"ol"; const c=PCODE[l]; const pn=(q.match(/paper\s*([1-4])|\bp([1-4])\b/)||[]).slice(1).find(Boolean); const M=PMETA[c];
+      if(pn&&M.papers[pn]){ const p=M.papers[pn]; return "<b>"+c+" Paper "+pn+" · "+p.n+"</b><br>"+dur(p.min)+" · "+p.m+" marks · "+p.w+acts([["Timed attempt","past-papers.html#t-"+c+"-"+pn]]); }
+      return "<b>"+M.name+" ("+c+")</b><ul>"+Object.entries(M.papers).map(([n,p])=>"<li>Paper "+n+": "+p.n+" · "+dur(p.min)+" · "+p.m+" marks · "+p.w+"</li>").join("")+"</ul>"+(l==="al"?"AS Level is Papers 1 and 2. The full A Level adds Papers 3 and 4.":"Both papers are compulsory, with four questions each."); }},
+    {k:["7081","0264","new syllabus","syllabus change","2027","changed","replace"],a:()=>"From <b>2027</b>, O Level Business Studies 7115 becomes <b>O Level Business 7081</b>, and IGCSE 0450 becomes <b>IGCSE Business 0264</b>. The six units stay, with new topics on technology and sustainable production, digital communication, and a formulas list. Papers stay at 1h30 and 80 marks each. 2026 candidates still sit 7115 / 0450."+acts([["See the syllabus","syllabus.html"]])},
+    {k:["topic","chapter","unit","syllabus","topics","content"],a:q=>{ const l=lvlFrom(q)||L()||"ol"; const d=SYL[l]; const n=(q.match(/(?:topic|unit|chapter)\s*(\d{1,2}(?:\.\d)?)/)||[])[1];
+      if(n){ const t=d.topics.find(x=>x.n===n); if(t) return "<b>"+d.short+" · "+t.n+" "+esc(t.t)+"</b><ul>"+t.k.map(x=>"<li>"+esc(x)+"</li>").join("")+"</ul>"+acts([["Open in syllabus","syllabus.html#"+l+"-"+t.n]]);
+        const u=+n; if(d.units[u]) return "<b>"+d.short+" · Unit "+u+": "+esc(d.units[u])+"</b><ul>"+d.topics.filter(x=>x.u===u).map(x=>"<li>"+x.n+" "+esc(x.t)+"</li>").join("")+"</ul>"+acts([["Open syllabus","syllabus.html#"+l]]); }
+      return "<b>"+d.label+"</b> has "+Object.keys(d.units).length+" units and "+d.topics.length+" topics. Ask “what's in unit 5” or open the tracker."+acts([["Open syllabus","syllabus.html#"+l]]); }},
+    {k:["command word","command words","explain","analyse","analyze","discuss","justify","recommend","identify","outline"],a:()=>"<b>Command words decide the marks.</b><ul><li><b>Identify / State</b>: name it, no explanation.</li><li><b>Define</b>: the exact meaning.</li><li><b>Outline</b>: set out the main points briefly.</li><li><b>Explain</b>: say how or why, with a reason.</li><li><b>Analyse</b>: build a chain of effects, linked to the case.</li><li><b>Justify / Recommend / Discuss</b>: weigh both sides and give a judgement.</li></ul>"+acts([["See the mark ladder","index.html#ladder"]])},
+    {k:["evaluation","evaluate","a*","a star","high marks","12 mark","20 mark","judgement","technique","tips"],a:()=>"Top answers climb all four assessment objectives: <b>knowledge</b> (the term), <b>application</b> (this business, its numbers), <b>analysis</b> (a chain: because… so… which means…), then <b>evaluation</b>: a clear decision, the main reason it wins, and what the decision depends on."+acts([["See it step by step","index.html#ladder"]])},
+    {k:["sir sohail","sohail ahmed","who is","about","teacher","experience","years"],a:()=>"Sir Sohail Ahmed teaches O Level, IGCSE and A Level Business in Karachi and online. He is Cambridge certified, has taught Business for 20+ years, and more than 500 of his students have scored an A*. His line: stop cramming, start understanding Business like a CEO."+acts([["About Sir Sohail","about.html"]])},
+    {k:["contact","number","phone","call","whatsapp","dm"],a:()=>"WhatsApp <b>"+WA_DISPLAY+"</b>, or DM <b>@bizbysohail</b> on Instagram."+acts([["WhatsApp",wa("Assalam o Alaikum Sir, I'd like to ask about your Business classes."),1],["Instagram",IG,1]])},
+    {k:["enrol","enroll","admission","join","register","seat","admit"],a:()=>"Seats fill fast. Fill the enrol form and WhatsApp opens with your details ready to send."+acts([["Enrol now","contact.html#enrol"]])},
+    {k:["grade","grades","result","threshold"],a:q=>{ const l=lvlFrom(q)||L(); return l?PMETA[PCODE[l]].name+" is graded <b>"+PMETA[PCODE[l]].grades+"</b>. Grade thresholds for each session sit next to its papers.":"O Level and A Level Business are graded A*–E. IGCSE Business is graded A*–G."; }},
+    {k:["formula","formulas","ratio","ratios","calculate","calculation"],a:()=>"Ask for any formula (“acid test formula”), or give me numbers: <code>break even fixed 20000 price 50 variable 30</code>, <code>current ratio 60000 30000</code>, <code>roce profit 40000 capital 200000</code>."+acts([["Business Lab calculators","lab.html"]])},
+    {k:["thanks","thank you","shukriya","jazakallah","jazak"],a:()=>"You're welcome. Think like a CEO!"}
+  ];
+  /* direct answers: key terms, formulas, calculations */
+  function define(q){ const m=q.match(/(?:define|definition of|what is an?|what is|what are|meaning of|whats)\s+([a-z\s-]{3,40})/); const term=(m?m[1]:q).trim().replace(/\?$/,"").replace(/\s+/g," ");
+    let best=null,bs=0; for(const d of DEFS){ const k=d[0].toLowerCase(); let s=0; if(term===k) s=100; else if(term.includes(k)) s=k.length+10; else if(k.includes(term)&&term.length>4) s=term.length; else if(lev(term,k)<=2&&k.length>5) s=6; if(s>bs){bs=s;best=d;} }
+    if(best&&bs>=6&&(m||bs>=50)) return "<b>"+best[0]+"</b>: "+best[1]+"."+'<br><small style="color:var(--c-ink-3)">Syllabus topic '+best[2]+' · now apply it to the business in the question</small>'+acts([["Drill key terms","lab.html#terms"]]); return null; }
+  function formula(q){ let best=null,bs=0; for(const f of FORMULAS){ const k=f[0].toLowerCase().replace(/\s*\(.*\)/,""); const ab=(f[0].match(/\(([A-Z]+)\)/)||[])[1]; let s=0; if(q.includes(" "+k+" ")||q.includes(k)) s=k.length+5; if(ab&&q.includes(" "+ab.toLowerCase()+" ")) s=20; if(s>bs){bs=s;best=f;} }
+    if(!best) return null; return "<b>"+best[0]+"</b> = "+best[1]+'<br><small style="color:var(--c-ink-3)">Topic '+best[2]+"</small>"+acts([["Try it in the Business Lab","lab.html"]]); }
+  const num=(q,re)=>{ const m=q.match(re); return m?parseFloat(m[1].replace(/,/g,"")):null; };
+  function calc(raw){ const q=" "+raw.toLowerCase().replace(/rs\.?|pkr|\$/g,"")+" ";
+    if(/break.?even/.test(q)){ const fc=num(q,/(?:fixed(?: costs?)?|fc)\s*[:=]?\s*([\d,.]+)/), p=num(q,/(?:price|selling price|sp)\s*[:=]?\s*([\d,.]+)/), vc=num(q,/(?:variable(?: costs?)?(?: per unit)?|vc|avc)\s*[:=]?\s*([\d,.]+)/);
+      if(fc!=null&&p!=null&&vc!=null){ if(p<=vc) return "Price must be above variable cost per unit, otherwise each sale loses money and there is no break-even point."; const c=p-vc, be=fc/c;
+        return "<b>Break-even</b><br>Contribution per unit = "+fmt(p)+" − "+fmt(vc)+" = <b>"+fmt(c)+"</b><br>Break-even output = "+fmt(fc)+" ÷ "+fmt(c)+" = <b>"+fmt(Math.ceil(be))+" units</b>"+(be%1?'<br><small style="color:var(--c-ink-3)">'+fmt(be)+" rounded up: you can't sell part of a unit.</small>":"")+acts([["Draw the chart","lab.html#be"]]); } }
+    const nums=(q.match(/[\d][\d,]*\.?\d*/g)||[]).map(x=>parseFloat(x.replace(/,/g,""))).filter(x=>!isNaN(x));
+    if(/current ratio/.test(q)&&nums.length>=2) return "<b>Current ratio</b> = "+fmt(nums[0])+" ÷ "+fmt(nums[1])+" = <b>"+(nums[0]/nums[1]).toFixed(2)+" : 1</b><br>"+(nums[0]/nums[1]<1?"Below 1: current liabilities exceed current assets, so short-term debts may be hard to pay.":nums[0]/nums[1]>2?"Well above 1.5–2: liquid, but cash may be sitting idle.":"Around 1.5–2 is usually comfortable.")+acts([["Ratio analyser","lab.html#ratios"]]);
+    if(/acid test/.test(q)&&nums.length>=3) return "<b>Acid test</b> = ("+fmt(nums[0])+" − "+fmt(nums[1])+") ÷ "+fmt(nums[2])+" = <b>"+((nums[0]-nums[1])/nums[2]).toFixed(2)+" : 1</b>"+acts([["Ratio analyser","lab.html#ratios"]]);
+    if(/roce|return on capital/.test(q)&&nums.length>=2) return "<b>ROCE</b> = "+fmt(nums[0])+" ÷ "+fmt(nums[1])+" × 100 = <b>"+(nums[0]/nums[1]*100).toFixed(1)+"%</b>"+acts([["Ratio analyser","lab.html#ratios"]]);
+    if(/(gross )?profit margin/.test(q)&&nums.length>=2) return "<b>"+(/gross/.test(q)?"Gross profit margin":"Profit margin")+"</b> = "+fmt(nums[0])+" ÷ "+fmt(nums[1])+" × 100 = <b>"+(nums[0]/nums[1]*100).toFixed(1)+"%</b>"+acts([["Ratio analyser","lab.html#ratios"]]);
+    return null; }
+  function answer(raw){ const q=norm(raw); const l=lvlFrom(q); if(l&&l!==ctx.lvl&&!/i'?m in|doing|studying/.test(q)){ ctx.lvl=l; save(); }
+    const c=calc(raw); if(c) return c;
+    if(/formula|equation|how to calculate|how do i calculate/.test(q)){ const f=formula(q); if(f) return f; }
+    if(/define|definition|what is|what are|meaning of|whats /.test(q)){ const d=define(q); if(d) return d; const f=formula(q); if(f) return f; }
+    let best=null,bs=0; for(const it of INT){ const s=has(q,it.k); if(s>bs){bs=s;best=it;} }
+    if(best) return best.a(q);
+    const d=define(q); if(d) return d;
+    return "I don't have that one saved yet. Send it to Sir Sohail on WhatsApp. Your question is already filled in."+acts([["Ask on WhatsApp",wa("Assalam o Alaikum Sir, I have a Business question: "+raw),1]]); }
+  function save(){ sess.set("biz-bot-ctx",ctx); const c=$("#botCtx"); if(c){ c.textContent=ctx.lvl?PCODE[ctx.lvl]:""; c.hidden=!ctx.lvl; } chips(); }
+  function add(html,who,persist){ const d=document.createElement("div"); d.className="mg "+who; d.innerHTML=html; msgs.appendChild(d); msgs.scrollTop=msgs.scrollHeight; if(persist!==false){ log.push([who,html]); log=log.slice(-30); sess.set("biz-bot-log",log);} return d; }
+  function ask(t){ t=t.trim(); if(!t) return; add(esc(t),"u"); Snd.soft(); const ty=add("<i></i><i></i><i></i>","b typing",false); setTimeout(()=>{ ty.remove(); add(answer(t),"b"); Snd.tick(); },Math.min(1000,360+t.length*12)); }
+  function chips(){ const c=ctx.lvl?PCODE[ctx.lvl]:null; const base=c?["Define stakeholder","Break even fixed 20000 price 50 variable 30",c+" past papers","What's in paper 2?","How do I evaluate?"]:["Define opportunity cost","ROCE formula","Command words","7081 vs 7115","Fees","Notes"]; $("#botSug").innerHTML=base.map(s=>'<button type="button">'+esc(s)+"</button>").join(""); }
+  let opened=false;
+  function open(){ box.classList.add("open"); box.setAttribute("aria-hidden","false"); fab.setAttribute("aria-expanded","true"); Snd.open();
+    if(!opened){ opened=true; if(log.length) log.forEach(([w,h])=>add(h,w,false)); else add("Assalam o Alaikum! I'm Biz bot. I know the key terms and formulas, I can work out break-even and ratios from your numbers, and I can open past papers, timers and notes for you.","b"); }
+    setTimeout(()=>{ if(FINE) inp.focus({preventScroll:true}); },220); }
+  function close(){ box.classList.remove("open"); box.setAttribute("aria-hidden","true"); fab.setAttribute("aria-expanded","false"); Snd.close(); }
+  BIZ.bot={open,close,ask};
+  fab.addEventListener("click",e=>{ e.stopPropagation(); box.classList.contains("open")?close():open(); });
+  $("#botX").addEventListener("click",close);
+  $("#botSug").addEventListener("click",e=>{ const b=e.target.closest("button"); if(b) ask(b.textContent); });
+  $("#botForm").addEventListener("submit",e=>{ e.preventDefault(); ask(inp.value); inp.value=""; });
+  msgs.addEventListener("click",e=>{ const s=e.target.closest("[data-say]"); if(s){ ask(s.dataset.say); return; } if(e.target.closest("[data-open-cart]")) BIZ.cart&&BIZ.cart.open(); });
+  document.addEventListener("click",e=>{ if(box.classList.contains("open")&&!e.target.closest("#bot,#botFab,#cart")) close(); });
+  addEventListener("keydown",e=>{ if(e.key==="Escape"&&box.classList.contains("open")) close(); });
+  save();
+  const ft=$(".foot-meta"); if(ft&&"IntersectionObserver" in window) new IntersectionObserver(es=>fab.classList.toggle("away",es[0].isIntersecting&&!box.classList.contains("open"))).observe(ft);
+})();
+
+/* ======================= COPY + YEAR ======================= */
+document.addEventListener("click",e=>{ const b=e.target.closest("[data-copy]"); if(!b) return; const v=b.dataset.copy; const ok=()=>{ const o=b.textContent; b.textContent="Copied"; setTimeout(()=>b.textContent=o,1400); toast(v+" copied"); };
+  if(navigator.clipboard) navigator.clipboard.writeText(v).then(ok).catch(()=>toast(v)); else toast(v); });
+$$("[data-year]").forEach(y=>y.textContent=new Date().getFullYear());
+
+/* logo fallback (drop sohail-logo.png next to the pages to use a real logo) */
+$$("img[data-fallback]").forEach(img=>{ const host=img.closest("[data-fb-host]");
+  const ok=()=>{ host&&host.classList.add("has-img"); if(/sohail-logo\.png/.test(img.src)){ const f=$("#favicon"); if(f) f.href=img.src; } };
+  const fail=()=>{ host&&host.classList.add("fb"); img.remove(); };
+  if(img.complete){ img.naturalWidth?ok():fail(); } else { img.addEventListener("load",ok,{once:true}); img.addEventListener("error",fail,{once:true}); } });
+
+/* boot hooks for page scripts */
+BIZ.ready=fn=>{ (BIZ._q=BIZ._q||[]).push(fn); };
+window.addEventListener("DOMContentLoaded",()=>{});
+function wordReveal(){ if(RM||!G||!ST) return;
+  $$("main h2").forEach(h=>{ if(h.closest("[data-kin]")||h.hasAttribute("data-kin")||h.closest(".modal")||h.closest(".story")) return; if(h.getBoundingClientRect().top<innerHeight*.95) return;
+    const walk=n=>{ [...n.childNodes].forEach(c=>{ if(c.nodeType===3){ const parts=c.textContent.split(/(\s+)/); const f=document.createDocumentFragment(); parts.forEach(p=>{ if(!p) return; if(/^\s+$/.test(p)){ f.appendChild(document.createTextNode(p)); return; } const o=document.createElement("span"); o.className="wm"; const i=document.createElement("span"); i.className="wi"; i.textContent=p; o.appendChild(i); f.appendChild(o); }); c.replaceWith(f); } else if(c.nodeType===1&&c.tagName!=="BR") walk(c); }); };
+    h.setAttribute("aria-label",h.textContent.replace(/\s+/g," ").trim()); walk(h);
+    G.from($$(".wi",h),{yPercent:115,duration:1.05,ease:"expo.out",stagger:.045,scrollTrigger:{trigger:h,start:"top 88%",once:true}}); }); }
+function dock(){ const d=$("#dock"), btn=$("#topBtn"); if(!d) return; const ring=$(".tp-ring circle",btn);
+  const upd=()=>{ const h=document.documentElement.scrollHeight-innerHeight, p=h>0?scrollY/h:0; ring.style.strokeDashoffset=(119.38*(1-p)).toFixed(1); };
+  addEventListener("scroll",upd,{passive:true}); upd(); btn.addEventListener("click",()=>{ if(lenis) lenis.scrollTo(0,{duration:1.4}); else scrollTo({top:0,behavior:RM?"auto":"smooth"}); });
+  const ft=$(".foot-meta"); if(ft&&"IntersectionObserver" in window) new IntersectionObserver(es=>d.classList.toggle("away",es[0].isIntersecting)).observe(ft); }
+function cursor(){ if(!FINE||RM) return; const c=$(".cursor"); if(!c) return; const dot=$(".c-dot",c), ring=$(".c-ring",c); let x=-100,y=-100,rx=-100,ry=-100,shown=false;
+  addEventListener("pointermove",e=>{ if(e.pointerType!=="mouse") return; x=e.clientX; y=e.clientY; if(!shown){ shown=true; rx=x; ry=y; root.classList.add("has-cursor"); } c.classList.toggle("hover",!!e.target.closest("a,button,[role=button],input,select,textarea,.topic,.prod,.tile,.rail-card")); },{passive:true});
+  document.addEventListener("pointerdown",()=>c.classList.add("down")); document.addEventListener("pointerup",()=>c.classList.remove("down"));
+  document.addEventListener("mouseleave",()=>c.classList.add("gone")); document.addEventListener("mouseenter",()=>c.classList.remove("gone"));
+  (function f(){ rx+=(x-rx)*.18; ry+=(y-ry)*.18; dot.style.transform="translate3d("+x+"px,"+y+"px,0)"; ring.style.transform="translate3d("+rx.toFixed(1)+"px,"+ry.toFixed(1)+"px,0)"; requestAnimationFrame(f); })(); }
+BIZ.boot=function(){ (BIZ._q||[]).forEach(f=>{ try{f()}catch(e){console.error(e)} }); reveals(); wordReveal(); rails(); dock(); cursor();
+  if(ST){ const r=()=>ST.refresh(); if(document.fonts&&document.fonts.ready) document.fonts.ready.then(r); addEventListener("load",r,{once:true}); } };
+})();
+
+/* courses page */
+(function(){
+const {$,$$,SYL,AO,deptOf,esc}=BIZ;
+$$(".topicline").forEach(el=>{ const key=el.dataset.syl, d=SYL[key];
+  el.innerHTML='<span class="lbl" style="width:100%">'+esc(d.label)+" · "+d.topics.length+" topics</span>"+d.topics.map(t=>'<a class="g-'+deptOf(key,t)+'" href="syllabus.html#'+key+"-"+t.n+'"><b>'+t.n+"</b>"+esc(t.t)+"</a>").join(""); });
+const ao=$("#aoBar"); if(ao) ao.innerHTML=AO.map(([c,n,w],i)=>'<div class="ao" style="--w:'+w+';--i:'+i+'"><b class="mono">'+c+" · "+w+"%</b><span>"+esc(n)+"</span></div>").join("");
+const links=$$(".c-index a"), secs=links.map(a=>document.getElementById(a.dataset.spy));
+function spy(){ let cur=secs[0]&&secs[0].id; secs.forEach(s=>{ if(s&&s.getBoundingClientRect().top<innerHeight*.4) cur=s.id; }); links.forEach(a=>a.classList.toggle("on",a.dataset.spy===cur)); }
+addEventListener("scroll",spy,{passive:true}); spy();
+})();
+
+BIZ.boot();
+</script>
+</body>
+</html>

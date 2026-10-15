@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://sirsohailahmed.vercel.app/sitemap.xml
